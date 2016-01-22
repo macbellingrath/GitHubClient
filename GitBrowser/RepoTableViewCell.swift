@@ -10,6 +10,17 @@ import UIKit
 
 class RepoTableViewCell: UITableViewCell {
 
+
+
+    @IBOutlet weak var usernameLabel: UILabel!
+    
+    
+    @IBOutlet weak var avatarimgview: CircularImageView!
+    
+    @IBOutlet weak var topTextLabel: UILabel!
+    
+    @IBOutlet weak var bottomTextLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -10,8 +10,10 @@ import UIKit
 
 class RepoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var avatarimgview: CircularImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        @IBOutlet weak var avatarimgview: CircularImageView!
         // Initialization code
     }
 

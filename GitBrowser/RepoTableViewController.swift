@@ -12,21 +12,15 @@ import ReactiveCocoa
 
 class RepoTableViewController: UITableViewController {
     
-    @IBOutlet weak var tf: UITextField!
-    var repos: [Repo] = []
+    var activities: [Activity] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let searchstrings = tf.rac_textSignal()
-            .toSignalProducer()
-            .map { $0 as! String}
-            .filter{ $0.characters.count > 3 }
-            
-            
-         let results =  searchstrings.flatMap(.Latest) { NetworkManager.sharedManager.search($0)}.retry(3)
+        let user = User(un: "macbellingrath")
         
-        results.startWithNext { print("repos: \($0)"); self.repos = $0; self.tableView.reloadData() }
+        NetworkManager.sharedManager.fetchActivity(forUser: user).startWithNext { self.activities = $0 ; self.tableView.reloadData()}
+        
         
     }
 
@@ -39,15 +33,16 @@ class RepoTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return repos.count
+        return activities.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RepoTableViewCell", forIndexPath: indexPath) as! RepoTableViewCell
-        let repo = repos[indexPath.row]
-        cell.textLabel?.text = repo.name
-        cell.detailTextLabel?.text = repo.owner.name
+        let activity = activities[indexPath.row]
+        cell.usernameLabel.text = activity.user.username
+        NetworkManager.sharedManager.getImageFromURL(activity.user.avatarUrl).startWithNext { cell.avatarimgview.image = $0 ; cell.avatarimgview.makeRound()}
+        
 
         return cell
     }

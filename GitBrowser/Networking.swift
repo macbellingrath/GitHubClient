@@ -11,54 +11,59 @@ import ReactiveCocoa
 import Alamofire
 
 
-struct Owner {
-    let name: String
-    
-}
-struct Repo {
-    var name: String
-    var owner: Owner
-}
+//struct Owner {
+//    let name: String
+//    
+//}
+//struct Repo {
+//    var name: String
+//    var owner: Owner
+//}
 
 class NetworkManager {
     private let baseURL = "https://api.github.com/"
     
     static let sharedManager = NetworkManager()
     
-    func search(s: String) -> SignalProducer<[Repo], NSError> {
+    func fetchActivity(forUser user: User) -> SignalProducer<[Activity], NSError> {
 
         return SignalProducer { observer, disposable in
-           
-            let params = [
-                "q":s
-            ]
-            print(params)
-            
-            Alamofire.request(.GET, self.baseURL + "search/repositories", parameters: params, encoding: ParameterEncoding.URL, headers: nil).responseJSON(options: .MutableContainers, completionHandler: { response in
+         
+
+            Alamofire.request(.GET, self.baseURL + "users/\(user.username)/received_events", parameters: nil, encoding: ParameterEncoding.URL, headers: nil).responseJSON(options: .MutableContainers, completionHandler: { response in
                 print(response.request)
                 switch response.result {
                 case .Failure(let error): observer.sendFailed(error); print(error)
                 case .Success(let jsonDict):
-
-        
-
-                    guard let items = jsonDict["items"] as? [[String: AnyObject]] else { print("couldn't create repo");return observer.sendFailed(NSError(domain: "Network Manager", code: 400, userInfo: nil))}
-                  
-                
-                    let repos = items.flatMap{ repoDict -> Repo? in
-                        if let name = repoDict["name"] as? String,
-                            let owner = repoDict["owner"] as? [String:AnyObject]? {
-                        let r = Repo(name: name, owner: Owner(name: owner?["login"] as? String ?? "Mac"))
-                            print("repo created: \(r)")
-                        return r
-                        }
-                        return nil
+                    guard let activityArray = jsonDict as? [[String:AnyObject]] else { return observer.sendFailed(NSError(domain: "networking", code: 01, userInfo: nil) )}
+                    let activities = activityArray.flatMap{
+                        Activity(fromDictionary: $0)
                     }
-                    observer.sendNext(repos)
+                 
+                    observer.sendNext(activities)
                     observer.sendCompleted()
+
+
                 }
             })
             
+        }
+    }
+    
+    
+    func getImageFromURL(str
+        : String) -> SignalProducer<UIImage, NSError> {
+            return SignalProducer { observer, disposable in
+        Alamofire.request(.GET, str).responseData { (response) in
+            switch response.result {
+            case .Failure(let error): observer.sendFailed(error)
+            case .Success(let v):
+                guard let img = UIImage(data: v) else { return observer.sendFailed(NSError(domain: "networkimage", code: 1, userInfo: nil))}
+                observer.sendNext(img)
+                observer.sendCompleted()
+                
+                }
+            }
         }
     }
     

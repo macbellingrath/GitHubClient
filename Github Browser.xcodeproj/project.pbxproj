@@ -11,6 +11,13 @@
 		E6630C9F1C511F0E0083D3D5 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6630CA11C5120030083D3D5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; };
 		E6630CA21C5120250083D3D5 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6630CA41C5274380083D3D5 /* RepoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA31C5274380083D3D5 /* RepoTableViewController.swift */; };
+		E6630CA91C5279470083D3D5 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA51C5279470083D3D5 /* Actor.swift */; };
+		E6630CAA1C5279470083D3D5 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA61C5279470083D3D5 /* Payload.swift */; };
+		E6630CAB1C5279470083D3D5 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA71C5279470083D3D5 /* Repo.swift */; };
+		E6630CAC1C5279470083D3D5 /* RootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA81C5279470083D3D5 /* RootClass.swift */; };
+		E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6630CB01C5284340083D3D5 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CAF1C5284340083D3D5 /* CircularImageView.swift */; };
 		E6C6E3A41C510431008A6AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3A31C510431008A6AF7 /* AppDelegate.swift */; };
 		E6C6E3A91C510431008A6AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C6E3A71C510431008A6AF7 /* Main.storyboard */; };
 		E6C6E3AB1C510431008A6AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C6E3AA1C510431008A6AF7 /* Assets.xcassets */; };
@@ -26,7 +33,6 @@
 		E6C6E3E01C51114E008A6AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C6E3DE1C51114E008A6AF7 /* LaunchScreen.storyboard */; };
 		E6C6E3EB1C51114E008A6AF7 /* GitBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3EA1C51114E008A6AF7 /* GitBrowserTests.swift */; };
 		E6C6E3F71C5111B4008A6AF7 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; };
-		E6C6E3FA1C5111DC008A6AF7 /* RepoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3F81C5111D0008A6AF7 /* RepoTableViewController.swift */; };
 		E6C6E3FD1C5111F5008A6AF7 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3FC1C5111F5008A6AF7 /* RepoTableViewCell.swift */; };
 		E6C6E3FF1C51123D008A6AF7 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3FE1C51123D008A6AF7 /* Networking.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in CopyFiles */,
 				E6630CA21C5120250083D3D5 /* Result.framework in CopyFiles */,
 				E6630C9F1C511F0E0083D3D5 /* Alamofire.framework in CopyFiles */,
 			);
@@ -64,6 +71,12 @@
 
 /* Begin PBXFileReference section */
 		E6630CA01C5120030083D3D5 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		E6630CA31C5274380083D3D5 /* RepoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewController.swift; sourceTree = "<group>"; };
+		E6630CA51C5279470083D3D5 /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		E6630CA61C5279470083D3D5 /* Payload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
+		E6630CA71C5279470083D3D5 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		E6630CA81C5279470083D3D5 /* RootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootClass.swift; sourceTree = "<group>"; };
+		E6630CAF1C5284340083D3D5 /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		E6C6E3A01C510431008A6AF7 /* Github Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C6E3A31C510431008A6AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6C6E3A81C510431008A6AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,7 +101,6 @@
 		E6C6E3EC1C51114E008A6AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
-		E6C6E3F81C5111D0008A6AF7 /* RepoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepoTableViewController.swift; path = ../RepoTableViewController.swift; sourceTree = "<group>"; };
 		E6C6E3FC1C5111F5008A6AF7 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 		E6C6E3FE1C51123D008A6AF7 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +142,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6630CAD1C52794C0083D3D5 /* Model Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6630CA51C5279470083D3D5 /* Actor.swift */,
+				E6630CA61C5279470083D3D5 /* Payload.swift */,
+				E6630CA71C5279470083D3D5 /* Repo.swift */,
+				E6630CA81C5279470083D3D5 /* RootClass.swift */,
+			);
+			name = "Model Files";
+			sourceTree = "<group>";
+		};
 		E6C6E3971C510431008A6AF7 = {
 			isa = PBXGroup;
 			children = (
@@ -199,9 +222,11 @@
 		E6C6E3D41C51114E008A6AF7 /* GitBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				E6C6E3F81C5111D0008A6AF7 /* RepoTableViewController.swift */,
+				E6630CA31C5274380083D3D5 /* RepoTableViewController.swift */,
+				E6630CAF1C5284340083D3D5 /* CircularImageView.swift */,
 				E6C6E3FE1C51123D008A6AF7 /* Networking.swift */,
 				E6C6E3FC1C5111F5008A6AF7 /* RepoTableViewCell.swift */,
+				E6630CAD1C52794C0083D3D5 /* Model Files */,
 				E6C6E3D91C51114E008A6AF7 /* Main.storyboard */,
 				E6C6E3FB1C5111E3008A6AF7 /* Supporting Files */,
 			);
@@ -448,10 +473,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6630CAB1C5279470083D3D5 /* Repo.swift in Sources */,
+				E6630CB01C5284340083D3D5 /* CircularImageView.swift in Sources */,
+				E6630CAA1C5279470083D3D5 /* Payload.swift in Sources */,
 				E6C6E3D61C51114E008A6AF7 /* AppDelegate.swift in Sources */,
-				E6C6E3FA1C5111DC008A6AF7 /* RepoTableViewController.swift in Sources */,
+				E6630CA41C5274380083D3D5 /* RepoTableViewController.swift in Sources */,
+				E6630CAC1C5279470083D3D5 /* RootClass.swift in Sources */,
 				E6C6E3FD1C5111F5008A6AF7 /* RepoTableViewCell.swift in Sources */,
 				E6C6E3FF1C51123D008A6AF7 /* Networking.swift in Sources */,
+				E6630CA91C5279470083D3D5 /* Actor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,7 +684,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
@@ -675,7 +704,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);

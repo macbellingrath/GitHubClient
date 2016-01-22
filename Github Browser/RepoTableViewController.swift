@@ -12,12 +12,7 @@ import ReactiveCocoa
 class RepoTableViewController: UITableViewController {
 
     
-    func dothings() -> SignalProducer<String, NoError> {
-        return SignalProducer { observer, disposable in
-            
-        }
-    }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
