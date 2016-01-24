@@ -41,7 +41,13 @@ class RepoTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("RepoTableViewCell", forIndexPath: indexPath) as! RepoTableViewCell
         let activity = activities[indexPath.row]
         cell.usernameLabel.text = activity.user.username
-        NetworkManager.sharedManager.getImageFromURL(activity.user.avatarUrl).startWithNext { cell.avatarimgview.image = $0 }
+        cell.topTextLabel.text = activity.repo.name
+        cell.bottomTextLabel.text = activity.createdAt
+
+        
+        
+
+  NetworkManager.sharedManager.getImageFromURL(activity.user.avatarUrl).startWithNext { cell.avatarimgview.image = $0 }
         
 
         return cell
