@@ -11,6 +11,13 @@ import UIKit
 
 @IBDesignable class CircularImageView: UIImageView {
     private var _round = false
+    
+    
+    
+    override func didMoveToSuperview() {
+        super.didMoveToSuperview()
+        round = true
+    }
     @IBInspectable var round: Bool {
         set {
             _round = newValue
@@ -34,8 +41,9 @@ import UIKit
     
     func makeRound() {
         if self.round == true {
+            self.layer.cornerRadius = (frame.width + frame.height ) / 4
             self.clipsToBounds = true
-            self.layer.cornerRadius = (self.frame.width + self.frame.height) / 4
+            self.layer.masksToBounds = true
         } else {
             self.layer.cornerRadius = 0
         }
