@@ -42,12 +42,21 @@ class RepoTableViewController: UITableViewController {
         let activity = activities[indexPath.row]
         cell.usernameLabel.text = activity.user.username
         cell.topTextLabel.text = activity.repo.name
-        cell.bottomTextLabel.text = activity.createdAt
-
+    
+        cell.bottomTextLabel.text = activity.createdAt?.makeDateString()
+        let eventstr: String
+        switch activity.eventType {
+        case .Unknown: eventstr = "Unknown"
+        case .ForkEvent: eventstr = "Forked"
+        case .MemberEvent: eventstr = "Created"
+        case .WatchEvent: eventstr = "Watching"
+        }
+         cell.eventTypeTextLabel.text = eventstr
+       
         
-        
+        print(activity.type)
 
-  NetworkManager.sharedManager.getImageFromURL(activity.user.avatarUrl).startWithNext { cell.avatarimgview.image = $0 }
+        NetworkManager.sharedManager.getImageFromURL(activity.user.avatarUrl).startWithNext { cell.avatarimgview.image = $0 }
         
 
         return cell
@@ -99,4 +108,16 @@ class RepoTableViewController: UITableViewController {
     }
     */
 
+}
+
+extension String {
+    func makeDateString() -> String {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
+        guard let date = formatter.dateFromString(self) else { return "" }
+        let prettydateformatter = NSDateFormatter()
+        prettydateformatter.dateStyle = .ShortStyle
+        prettydateformatter.timeStyle = .ShortStyle
+        return prettydateformatter.stringFromDate(date)
+    }
 }

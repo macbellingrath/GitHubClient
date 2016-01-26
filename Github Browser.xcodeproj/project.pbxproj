@@ -15,7 +15,7 @@
 		E6630CA91C5279470083D3D5 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA51C5279470083D3D5 /* Actor.swift */; };
 		E6630CAA1C5279470083D3D5 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA61C5279470083D3D5 /* Payload.swift */; };
 		E6630CAB1C5279470083D3D5 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA71C5279470083D3D5 /* Repo.swift */; };
-		E6630CAC1C5279470083D3D5 /* RootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA81C5279470083D3D5 /* RootClass.swift */; };
+		E6630CAC1C5279470083D3D5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA81C5279470083D3D5 /* Activity.swift */; };
 		E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6630CB01C5284340083D3D5 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CAF1C5284340083D3D5 /* CircularImageView.swift */; };
 		E6C6E3A41C510431008A6AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3A31C510431008A6AF7 /* AppDelegate.swift */; };
@@ -75,7 +75,7 @@
 		E6630CA51C5279470083D3D5 /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		E6630CA61C5279470083D3D5 /* Payload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 		E6630CA71C5279470083D3D5 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
-		E6630CA81C5279470083D3D5 /* RootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootClass.swift; sourceTree = "<group>"; };
+		E6630CA81C5279470083D3D5 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		E6630CAF1C5284340083D3D5 /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		E6C6E3A01C510431008A6AF7 /* Github Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C6E3A31C510431008A6AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 				E6630CA51C5279470083D3D5 /* Actor.swift */,
 				E6630CA61C5279470083D3D5 /* Payload.swift */,
 				E6630CA71C5279470083D3D5 /* Repo.swift */,
-				E6630CA81C5279470083D3D5 /* RootClass.swift */,
+				E6630CA81C5279470083D3D5 /* Activity.swift */,
 			);
 			name = "Model Files";
 			sourceTree = "<group>";
@@ -478,7 +478,7 @@
 				E6630CAA1C5279470083D3D5 /* Payload.swift in Sources */,
 				E6C6E3D61C51114E008A6AF7 /* AppDelegate.swift in Sources */,
 				E6630CA41C5274380083D3D5 /* RepoTableViewController.swift in Sources */,
-				E6630CAC1C5279470083D3D5 /* RootClass.swift in Sources */,
+				E6630CAC1C5279470083D3D5 /* Activity.swift in Sources */,
 				E6C6E3FD1C5111F5008A6AF7 /* RepoTableViewCell.swift in Sources */,
 				E6C6E3FF1C51123D008A6AF7 /* Networking.swift in Sources */,
 				E6630CA91C5279470083D3D5 /* Actor.swift in Sources */,

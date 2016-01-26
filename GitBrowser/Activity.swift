@@ -1,26 +1,31 @@
 //
-//	RootClass.swift
+//  Activity.swift
 //
 //	Create by McMillan Bellingrath on 22/1/2016
 //	Copyright © 2016. All rights reserved.
-//	Model file Generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
+
 
 import Foundation
 
-
+enum EventType: String {
+    case WatchEvent, ForkEvent, MemberEvent, Unknown
+}
 
 class Activity : NSObject, NSCoding{
     
 
 
 	var user : User!
-	var createdAt : String!
+	var createdAt : String?
 	var id : String!
 	var org : User!
 	var payload : Payload!
 	var publicField : Bool!
 	var repo : Repo!
 	var type : String!
+    var eventType: EventType {
+       return EventType(rawValue: type) ?? EventType.Unknown
+    }
 
 
 	/**
@@ -30,7 +35,10 @@ class Activity : NSObject, NSCoding{
 		if let actorData = dictionary["actor"] as? NSDictionary{
 			user = User(fromDictionary: actorData)
 		}
-		createdAt = dictionary["created_at"] as? String
+       
+        createdAt = dictionary["created_at"] as? String
+    
+        
 		id = dictionary["id"] as? String
 		if let orgData = dictionary["org"] as? NSDictionary{
 			org = User(fromDictionary: orgData)

@@ -14,6 +14,7 @@ class RepoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var usernameLabel: UILabel!
     
+    @IBOutlet weak var eventTypeTextLabel: UILabel!
     
     @IBOutlet weak var avatarimgview: CircularImageView!
     
