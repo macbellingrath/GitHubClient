@@ -18,6 +18,8 @@
 		E6630CAC1C5279470083D3D5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA81C5279470083D3D5 /* Activity.swift */; };
 		E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6630CB01C5284340083D3D5 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CAF1C5284340083D3D5 /* CircularImageView.swift */; };
+		E6A0F3181C5944A00068E0A9 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6A0F3171C5944A00068E0A9 /* CardTableViewCell.xib */; };
+		E6A0F31A1C5944EF0068E0A9 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A0F3191C5944EF0068E0A9 /* CardTableViewCell.swift */; };
 		E6C6E3A41C510431008A6AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3A31C510431008A6AF7 /* AppDelegate.swift */; };
 		E6C6E3A91C510431008A6AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C6E3A71C510431008A6AF7 /* Main.storyboard */; };
 		E6C6E3AB1C510431008A6AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C6E3AA1C510431008A6AF7 /* Assets.xcassets */; };
@@ -77,6 +79,9 @@
 		E6630CA71C5279470083D3D5 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		E6630CA81C5279470083D3D5 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		E6630CAF1C5284340083D3D5 /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
+		E6A0F3161C593DC70068E0A9 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
+		E6A0F3171C5944A00068E0A9 /* CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		E6A0F3191C5944EF0068E0A9 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		E6C6E3A01C510431008A6AF7 /* Github Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C6E3A31C510431008A6AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6C6E3A81C510431008A6AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -156,6 +161,7 @@
 		E6C6E3971C510431008A6AF7 = {
 			isa = PBXGroup;
 			children = (
+				E6A0F3161C593DC70068E0A9 /* Playground.playground */,
 				E6C6E3D41C51114E008A6AF7 /* GitBrowser */,
 				E6C6E3E91C51114E008A6AF7 /* GitBrowserTests */,
 				E6C6E3A21C510431008A6AF7 /* Github Browser */,
@@ -229,6 +235,8 @@
 				E6630CAD1C52794C0083D3D5 /* Model Files */,
 				E6C6E3D91C51114E008A6AF7 /* Main.storyboard */,
 				E6C6E3FB1C5111E3008A6AF7 /* Supporting Files */,
+				E6A0F3171C5944A00068E0A9 /* CardTableViewCell.xib */,
+				E6A0F3191C5944EF0068E0A9 /* CardTableViewCell.swift */,
 			);
 			path = GitBrowser;
 			sourceTree = "<group>";
@@ -401,6 +409,7 @@
 				E6C6E3E01C51114E008A6AF7 /* LaunchScreen.storyboard in Resources */,
 				E6C6E3DD1C51114E008A6AF7 /* Assets.xcassets in Resources */,
 				E6C6E3DB1C51114E008A6AF7 /* Main.storyboard in Resources */,
+				E6A0F3181C5944A00068E0A9 /* CardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +487,7 @@
 				E6630CAA1C5279470083D3D5 /* Payload.swift in Sources */,
 				E6C6E3D61C51114E008A6AF7 /* AppDelegate.swift in Sources */,
 				E6630CA41C5274380083D3D5 /* RepoTableViewController.swift in Sources */,
+				E6A0F31A1C5944EF0068E0A9 /* CardTableViewCell.swift in Sources */,
 				E6630CAC1C5279470083D3D5 /* Activity.swift in Sources */,
 				E6C6E3FD1C5111F5008A6AF7 /* RepoTableViewCell.swift in Sources */,
 				E6C6E3FF1C51123D008A6AF7 /* Networking.swift in Sources */,
