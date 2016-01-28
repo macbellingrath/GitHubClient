@@ -22,27 +22,39 @@ class RepoTableViewController: UITableViewController {
         NetworkManager.sharedManager.fetchActivity(forUser: user).startWithNext { self.activities = $0 ; self.tableView.reloadData()}
         
         
-          let cellNib = UINib(nibName: "CardTableViewCell", bundle: nil)
+        let cellNib = UINib(celltype: .CardTableViewCell)
         
-        tableView.registerNib(cellNib, forCellReuseIdentifier: "CardTableViewCell")
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        tableView.registerNib(cellNib, forCellReuseIdentifier: UITableViewCellIdentifier.CardTableViewCell.rawValue)
+        
+        clearsSelectionOnViewWillAppear = true
     }
 
     // MARK: - Table view data source
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        
         return activities.count
     }
+    
+    
+    
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        switch segue.identifierForSegue {
+        case .Default: break
+        case .Detail:
+                guard let row = tableView.indexPathForSelectedRow?.row, let destVC = segue.destinationViewController as? DetailViewController else { return }
+          
+            destVC.activity = activities[row]
+            
+        }
+    }
+    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-       let cell = tableView.dequeueReusableCellWithIdentifier("CardTableViewCell", forIndexPath: indexPath) as! CardTableViewCell
+       let cell = tableView.dequeueReusableCellWithIdentifier(UITableViewCellIdentifier.CardTableViewCell.rawValue, forIndexPath: indexPath) as! CardTableViewCell
         
         
         let activity = activities[indexPath.row]
@@ -67,6 +79,11 @@ class RepoTableViewController: UITableViewController {
 
         return cell 
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier(SegueIdentifierType.Detail.rawValue, sender: self)
+    }
+
 
   override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 125
@@ -74,14 +91,4 @@ class RepoTableViewController: UITableViewController {
 
 }
 
-extension String {
-    func makeDateString() -> String {
-        let formatter = NSDateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
-        guard let date = formatter.dateFromString(self) else { return "" }
-        let prettydateformatter = NSDateFormatter()
-        prettydateformatter.dateStyle = .ShortStyle
-        prettydateformatter.timeStyle = .ShortStyle
-        return prettydateformatter.stringFromDate(date)
-    }
-}
+

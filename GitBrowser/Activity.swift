@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum EventType: String {
+public enum EventType: String {
     case WatchEvent, ForkEvent, MemberEvent, Unknown
 }
 

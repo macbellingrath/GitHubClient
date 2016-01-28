@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E61EE74C1C5AB19500E850D3 /* SegueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE74B1C5AB19500E850D3 /* SegueExtension.swift */; };
+		E61EE74E1C5AB68E00E850D3 /* CellIdentifierExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE74D1C5AB68E00E850D3 /* CellIdentifierExtension.swift */; };
+		E61EE7501C5AB73C00E850D3 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE74F1C5AB73C00E850D3 /* StringExtensions.swift */; };
+		E61EE7521C5AB78B00E850D3 /* NIBExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE7511C5AB78B00E850D3 /* NIBExtensions.swift */; };
+		E61EE7541C5AB98F00E850D3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE7531C5AB98F00E850D3 /* DetailViewController.swift */; };
+		E61EE7561C5ABF1900E850D3 /* EventTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE7551C5ABF1900E850D3 /* EventTypeExtensions.swift */; };
 		E6630C9D1C511E0D0083D3D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; };
 		E6630C9F1C511F0E0083D3D5 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6630CA11C5120030083D3D5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; };
@@ -72,6 +78,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E61EE74B1C5AB19500E850D3 /* SegueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueExtension.swift; sourceTree = "<group>"; };
+		E61EE74D1C5AB68E00E850D3 /* CellIdentifierExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellIdentifierExtension.swift; sourceTree = "<group>"; };
+		E61EE74F1C5AB73C00E850D3 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		E61EE7511C5AB78B00E850D3 /* NIBExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NIBExtensions.swift; sourceTree = "<group>"; };
+		E61EE7531C5AB98F00E850D3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E61EE7551C5ABF1900E850D3 /* EventTypeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTypeExtensions.swift; sourceTree = "<group>"; };
 		E6630CA01C5120030083D3D5 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		E6630CA31C5274380083D3D5 /* RepoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewController.swift; sourceTree = "<group>"; };
 		E6630CA51C5279470083D3D5 /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
@@ -229,6 +241,12 @@
 			isa = PBXGroup;
 			children = (
 				E6630CA31C5274380083D3D5 /* RepoTableViewController.swift */,
+				E61EE7531C5AB98F00E850D3 /* DetailViewController.swift */,
+				E61EE7551C5ABF1900E850D3 /* EventTypeExtensions.swift */,
+				E61EE7511C5AB78B00E850D3 /* NIBExtensions.swift */,
+				E61EE74F1C5AB73C00E850D3 /* StringExtensions.swift */,
+				E61EE74B1C5AB19500E850D3 /* SegueExtension.swift */,
+				E61EE74D1C5AB68E00E850D3 /* CellIdentifierExtension.swift */,
 				E6630CAF1C5284340083D3D5 /* CircularImageView.swift */,
 				E6C6E3FE1C51123D008A6AF7 /* Networking.swift */,
 				E6C6E3FC1C5111F5008A6AF7 /* RepoTableViewCell.swift */,
@@ -485,12 +503,18 @@
 				E6630CAB1C5279470083D3D5 /* Repo.swift in Sources */,
 				E6630CB01C5284340083D3D5 /* CircularImageView.swift in Sources */,
 				E6630CAA1C5279470083D3D5 /* Payload.swift in Sources */,
+				E61EE7521C5AB78B00E850D3 /* NIBExtensions.swift in Sources */,
+				E61EE74C1C5AB19500E850D3 /* SegueExtension.swift in Sources */,
 				E6C6E3D61C51114E008A6AF7 /* AppDelegate.swift in Sources */,
 				E6630CA41C5274380083D3D5 /* RepoTableViewController.swift in Sources */,
 				E6A0F31A1C5944EF0068E0A9 /* CardTableViewCell.swift in Sources */,
+				E61EE7561C5ABF1900E850D3 /* EventTypeExtensions.swift in Sources */,
 				E6630CAC1C5279470083D3D5 /* Activity.swift in Sources */,
+				E61EE74E1C5AB68E00E850D3 /* CellIdentifierExtension.swift in Sources */,
 				E6C6E3FD1C5111F5008A6AF7 /* RepoTableViewCell.swift in Sources */,
 				E6C6E3FF1C51123D008A6AF7 /* Networking.swift in Sources */,
+				E61EE7541C5AB98F00E850D3 /* DetailViewController.swift in Sources */,
+				E61EE7501C5AB73C00E850D3 /* StringExtensions.swift in Sources */,
 				E6630CA91C5279470083D3D5 /* Actor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,7 +666,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.macbellingrath.Github-Browser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 9.3;
 			};
 			name = Debug;
 		};
@@ -659,7 +683,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.macbellingrath.Github-Browser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 9.3;
 			};
 			name = Release;
 		};

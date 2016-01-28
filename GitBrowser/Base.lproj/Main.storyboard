@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Activity-->
@@ -21,6 +23,7 @@
                     <navigationItem key="navigationItem" title="Activity" id="fD5-kQ-QKs"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="bZM-lm-gOV" id="f9C-iy-4xS"/>
+                        <segue destination="o6k-3g-u2n" kind="show" identifier="Detail" id="v5p-FZ-EEv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meT-up-jwk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -34,6 +37,115 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="242" y="173"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="7TU-NW-y5K">
+            <objects>
+                <viewController id="o6k-3g-u2n" customClass="DetailViewController" customModule="GitBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4AP-n4-MbC"/>
+                        <viewControllerLayoutGuide type="bottom" id="mW6-Iz-Xzm"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="XwH-Pg-QkT">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5ZX-cK-O4A">
+                                <rect key="frame" x="40" y="140" width="334" height="522"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ful-J9-XGu">
+                                        <rect key="frame" x="126" y="0.0" width="82" height="115"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="jP7-pg-WeZ">
+                                        <rect key="frame" x="147" y="125" width="39" height="101"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="6UT-iz-OKn">
+                                        <rect key="frame" x="151" y="236" width="31" height="76"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZZP-X7-jNK">
+                                        <rect key="frame" x="154" y="322" width="25" height="200"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="9"/>
+                                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="RaX-yo-Bqi"/>
+                                    <constraint firstAttribute="height" constant="200" id="bdr-Lm-lbV"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RaX-yo-Bqi"/>
+                                        <exclude reference="bdr-Lm-lbV"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2016-01-28 at 8.44.58 AM" translatesAutoresizingMaskIntoConstraints="NO" id="dgL-41-Nfs" customClass="CircularImageView" customModule="GitBrowser" customModuleProvider="target">
+                                <rect key="frame" x="157" y="20" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="6iI-cD-mHb"/>
+                                    <constraint firstAttribute="width" secondItem="dgL-41-Nfs" secondAttribute="height" multiplier="1:1" id="gFT-3c-oNh"/>
+                                    <constraint firstAttribute="width" secondItem="dgL-41-Nfs" secondAttribute="height" multiplier="1:1" id="lxu-3N-hWa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lxu-3N-hWa"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5ZX-cK-O4A" firstAttribute="top" secondItem="dgL-41-Nfs" secondAttribute="bottom" constant="421" id="11Z-f5-FAT"/>
+                            <constraint firstItem="5ZX-cK-O4A" firstAttribute="leading" secondItem="dgL-41-Nfs" secondAttribute="trailing" constant="25.5" id="4ay-LD-nel"/>
+                            <constraint firstItem="5ZX-cK-O4A" firstAttribute="top" secondItem="dgL-41-Nfs" secondAttribute="top" id="4m3-Bb-9ZA"/>
+                            <constraint firstAttribute="bottom" secondItem="dgL-41-Nfs" secondAttribute="bottom" constant="10" id="5pg-Yz-EC5"/>
+                            <constraint firstItem="5ZX-cK-O4A" firstAttribute="centerX" secondItem="XwH-Pg-QkT" secondAttribute="centerX" id="DeL-Cf-a0z"/>
+                            <constraint firstItem="dgL-41-Nfs" firstAttribute="leading" secondItem="XwH-Pg-QkT" secondAttribute="leading" constant="8" id="V0k-oI-K1g"/>
+                            <constraint firstAttribute="bottom" secondItem="5ZX-cK-O4A" secondAttribute="bottom" constant="10" id="arP-SK-Gvs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5ZX-cK-O4A" secondAttribute="trailing" constant="20" id="b2W-3Q-Dkf"/>
+                            <constraint firstAttribute="bottom" secondItem="5ZX-cK-O4A" secondAttribute="bottom" constant="117.5" id="d2W-C5-lub"/>
+                            <constraint firstItem="5ZX-cK-O4A" firstAttribute="leading" secondItem="XwH-Pg-QkT" secondAttribute="leadingMargin" constant="20" id="eP7-jl-hau"/>
+                            <constraint firstItem="dgL-41-Nfs" firstAttribute="top" secondItem="XwH-Pg-QkT" secondAttribute="top" constant="20" id="jqP-Lt-HEo"/>
+                            <constraint firstItem="5ZX-cK-O4A" firstAttribute="top" secondItem="dgL-41-Nfs" secondAttribute="bottom" constant="20" id="ow9-xn-TNc"/>
+                            <constraint firstItem="5ZX-cK-O4A" firstAttribute="trailing" secondItem="dgL-41-Nfs" secondAttribute="leading" constant="164" id="qwb-K8-AyL"/>
+                            <constraint firstItem="dgL-41-Nfs" firstAttribute="centerX" secondItem="XwH-Pg-QkT" secondAttribute="centerX" id="yk4-xH-jCA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5pg-Yz-EC5"/>
+                                <exclude reference="V0k-oI-K1g"/>
+                                <exclude reference="11Z-f5-FAT"/>
+                                <exclude reference="4ay-LD-nel"/>
+                                <exclude reference="4m3-Bb-9ZA"/>
+                                <exclude reference="d2W-C5-lub"/>
+                                <exclude reference="qwb-K8-AyL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImgView" destination="dgL-41-Nfs" id="7yg-Hx-f6s"/>
+                        <outlet property="dateLabel" destination="ZZP-X7-jNK" id="nHw-Yq-VMM"/>
+                        <outlet property="eventTypeLabel" destination="6UT-iz-OKn" id="7o4-US-kTu"/>
+                        <outlet property="repoNameLabel" destination="jP7-pg-WeZ" id="TnL-x6-v6j"/>
+                        <outlet property="userNameLabel" destination="ful-J9-XGu" id="ajN-qg-xCZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="78R-0q-ZY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837" y="173"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I63-uE-Pdt">
@@ -53,4 +165,7 @@
             <point key="canvasLocation" x="-578" y="173"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screen Shot 2016-01-28 at 8.44.58 AM" width="128" height="110"/>
+    </resources>
 </document>
