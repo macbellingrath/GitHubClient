@@ -40,7 +40,7 @@ class CardTableViewCell: UITableViewCell {
     
     override func drawRect(rect: CGRect) {
         contentView.backgroundColor = UIColor.clearColor()
-        contView.backgroundColor = UIColor.whiteColor()
+        contView.backgroundColor = UIColor(red:0, green:0.49, blue:1, alpha:1)
         contView.layer.cornerRadius = 10
         contView.layer.masksToBounds = true
         contView.layer.masksToBounds = false
