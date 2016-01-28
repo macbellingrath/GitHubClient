@@ -13,7 +13,7 @@ import UIKit
     private var _round = false
     
     
-    
+ 
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
         round = true
@@ -29,6 +29,7 @@ import UIKit
     }
     override internal var frame: CGRect {
         set {
+            round = true
             super.frame = newValue
             makeRound()
         }
@@ -37,12 +38,12 @@ import UIKit
         }
         
     }
-    
+   
     
     func makeRound() {
         if self.round == true {
             self.layer.cornerRadius = (frame.width + frame.height ) / 4
-            self.clipsToBounds = true
+       
             self.layer.masksToBounds = true
         } else {
             self.layer.cornerRadius = 0
