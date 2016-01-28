@@ -24,6 +24,7 @@ class RepoTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        @IBOutlet weak var headerView: UILabel!
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 

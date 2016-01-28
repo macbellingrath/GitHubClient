@@ -49,10 +49,6 @@ class DetailViewController: UIViewController, ViewConfigurable {
         configureView(forActivity: activity)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
     
 }

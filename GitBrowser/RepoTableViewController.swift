@@ -13,13 +13,24 @@ import ReactiveCocoa
 class RepoTableViewController: UITableViewController {
     
     var activities: [Activity] = []
+    
+    var currentUser: User = User(un: "macbellingrath")
+    
+    func configureView() {
+        currentUserFeedLabel.text = "Viewing " + currentUser.username + "'s public feed"
+        
+        NetworkManager.sharedManager.fetchActivity(forUser: currentUser).startWithNext { self.activities = $0 ; self.tableView.reloadData()}
+        
+    }
 
+    @IBOutlet weak var currentUserFeedLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let user = User(un: "macbellingrath")
-        
-        NetworkManager.sharedManager.fetchActivity(forUser: user).startWithNext { self.activities = $0 ; self.tableView.reloadData()}
+ 
+        configureView()
         
         
         let cellNib = UINib(celltype: .CardTableViewCell)
@@ -50,7 +61,14 @@ class RepoTableViewController: UITableViewController {
             
         }
     }
-    
+    @IBAction func unwind(sender: UIStoryboardSegue) {
+        
+        guard let detailVC = sender.sourceViewController as? DetailViewController, let activity = detailVC.activity else { return }
+        
+        currentUser = activity.user
+        configureView()
+        
+    }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
