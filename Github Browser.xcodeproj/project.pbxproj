@@ -24,6 +24,12 @@
 		E6630CAC1C5279470083D3D5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA81C5279470083D3D5 /* Activity.swift */; };
 		E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6630CB01C5284340083D3D5 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CAF1C5284340083D3D5 /* CircularImageView.swift */; };
+		E698317F1C5F8F2800D13694 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; };
+		E69831801C5F8F2800D13694 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; };
+		E69831811C5F8F2800D13694 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; };
+		E69831831C5F8F9600D13694 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E69831841C5F8F9600D13694 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E69831851C5F8F9600D13694 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6A0F3181C5944A00068E0A9 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6A0F3171C5944A00068E0A9 /* CardTableViewCell.xib */; };
 		E6A0F31A1C5944EF0068E0A9 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A0F3191C5944EF0068E0A9 /* CardTableViewCell.swift */; };
 		E6C6E3A41C510431008A6AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3A31C510431008A6AF7 /* AppDelegate.swift */; };
@@ -72,6 +78,18 @@
 				E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in CopyFiles */,
 				E6630CA21C5120250083D3D5 /* Result.framework in CopyFiles */,
 				E6630C9F1C511F0E0083D3D5 /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E69831821C5F8F4C00D13694 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E69831831C5F8F9600D13694 /* Result.framework in CopyFiles */,
+				E69831841C5F8F9600D13694 /* Alamofire.framework in CopyFiles */,
+				E69831851C5F8F9600D13694 /* ReactiveCocoa.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +171,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E698317F1C5F8F2800D13694 /* Alamofire.framework in Frameworks */,
+				E69831801C5F8F2800D13694 /* ReactiveCocoa.framework in Frameworks */,
+				E69831811C5F8F2800D13694 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +365,7 @@
 				E6C6E3E21C51114E008A6AF7 /* Sources */,
 				E6C6E3E31C51114E008A6AF7 /* Frameworks */,
 				E6C6E3E41C51114E008A6AF7 /* Resources */,
+				E69831821C5F8F4C00D13694 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -756,6 +778,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GitBrowserTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -771,6 +797,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GitBrowserTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
