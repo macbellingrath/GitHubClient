@@ -22,5 +22,5 @@ script:
 before_install:
   - brew update
   - brew uninstall xctool && brew install --HEAD xctool
-  - brew install carthage
+  - brew uninstall carthage && brew install carthage
   - carthage bootstrap 
