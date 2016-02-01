@@ -14,7 +14,6 @@ extension EventType {
     var description: String {
         switch self {
         case .Unknown: return "Unknown"
-        case .CreateEvent: return "Created"
         case .ForkEvent: return  "Forked"
         case .MemberEvent: return "Created"
         case .WatchEvent: return "Watching"

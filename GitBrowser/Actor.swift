@@ -35,7 +35,7 @@ class User : NSObject, NSCoding{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		let dictionary = NSMutableDictionary()
+		var dictionary = NSMutableDictionary()
 		if avatarUrl != nil{
 			dictionary["avatar_url"] = avatarUrl
 		}

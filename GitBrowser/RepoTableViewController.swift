@@ -80,8 +80,14 @@ class RepoTableViewController: UITableViewController {
         cell.topTextLabel.text = activity.repo.name
     
         cell.bottomTextLabel.text = activity.createdAt?.makeDateString()
-
-        cell.eventTypeTextLabel.text = activity.eventType.description
+        let eventstr: String
+        switch activity.eventType {
+        case .Unknown: eventstr = "Unknown"
+        case .ForkEvent: eventstr = "Forked"
+        case .MemberEvent: eventstr = "Created"
+        case .WatchEvent: eventstr = "Watching"
+        }
+         cell.eventTypeTextLabel.text = eventstr
        
         
         print(activity.type)

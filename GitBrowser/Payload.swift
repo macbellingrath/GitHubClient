@@ -25,7 +25,7 @@ class Payload : NSObject, NSCoding{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		let dictionary = NSMutableDictionary()
+		var dictionary = NSMutableDictionary()
 		if action != nil{
 			dictionary["action"] = action
 		}

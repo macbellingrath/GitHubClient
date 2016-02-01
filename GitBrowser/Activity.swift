@@ -8,7 +8,7 @@
 import Foundation
 
 public enum EventType: String {
-    case WatchEvent, ForkEvent, MemberEvent, CreateEvent, Unknown
+    case WatchEvent, ForkEvent, MemberEvent, Unknown
 }
 
 class Activity : NSObject, NSCoding{
@@ -58,7 +58,7 @@ class Activity : NSObject, NSCoding{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		let dictionary = NSMutableDictionary()
+		var dictionary = NSMutableDictionary()
 		if user != nil{
 			dictionary["actor"] = user.toDictionary()
 		}
