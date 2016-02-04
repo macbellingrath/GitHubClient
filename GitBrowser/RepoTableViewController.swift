@@ -92,7 +92,10 @@ class RepoTableViewController: UITableViewController {
         
         print(activity.type)
 
-        NetworkManager.sharedManager.getImageFromURL(activity.user.avatarUrl).startWithNext { cell.avatarimgview.image = $0; cell.avatarimgview.makeRound() }
+        NetworkManager.sharedManager.getImageFromURL(activity.user.avatarUrl).startWithNext {
+            
+            cell.avatarimgview.image = $0; cell.avatarimgview.makeRound()
+        }
         
 
         return cell 
