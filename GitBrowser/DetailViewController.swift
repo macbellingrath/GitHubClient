@@ -9,7 +9,7 @@
 import UIKit
 
 protocol ViewConfigurable {
-    func configureView(forActivity activity: Activity)
+    func configureView(forActivity activity: RealmActivity)
     weak var avatarImgView: CircularImageView! { get set }
     weak var userNameLabel: UILabel! { get set }
     weak var repoNameLabel: UILabel! { get set }
@@ -20,12 +20,12 @@ protocol ViewConfigurable {
 }
 extension ViewConfigurable {
     
-    func configureView(forActivity activity: Activity) {
+    func configureView(forActivity activity: RealmActivity) {
     NetworkManager.sharedManager.getImageFromURL(activity.user.avatarUrl).startWithNext { self.avatarImgView.image = $0 }
         userNameLabel.text = activity.user.username
         repoNameLabel.text = activity.repo.name
         eventTypeLabel.text = activity.eventType.description
-        dateLabel.text = activity.createdAt?.makeDateString()
+        dateLabel.text = activity.createdAt.makeDateString()
         
     }
 
@@ -33,7 +33,7 @@ extension ViewConfigurable {
 
 class DetailViewController: UIViewController, ViewConfigurable {
     
-    var activity: Activity!
+    var activity: RealmActivity!
     
     @IBOutlet weak var avatarImgView: CircularImageView!
     @IBOutlet weak var userNameLabel: UILabel!

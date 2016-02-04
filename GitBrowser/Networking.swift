@@ -9,6 +9,7 @@
 import Foundation
 import ReactiveCocoa
 import Alamofire
+import RealmSwift
 
 
 //struct Owner {
@@ -25,10 +26,11 @@ class NetworkManager {
     
     static let sharedManager = NetworkManager()
     
-    func fetchActivity(forUser user: User) -> SignalProducer<[Activity], NSError> {
+    func fetchActivity(forUser user: RealmUser) -> SignalProducer<[RealmActivity], NSError> {
 
         return SignalProducer { observer, disposable in
-         
+        
+      
 
             Alamofire.request(.GET, self.baseURL + "users/\(user.username)/received_events", parameters: nil, encoding: ParameterEncoding.URL, headers: nil).responseJSON(options: .MutableContainers, completionHandler: { response in
                 print(response.request)
@@ -37,7 +39,7 @@ class NetworkManager {
                 case .Success(let jsonDict):
                     guard let activityArray = jsonDict as? [[String:AnyObject]] else { return observer.sendFailed(NSError(domain: "networking", code: 01, userInfo: nil) )}
                     let activities = activityArray.flatMap{
-                        Activity(fromDictionary: $0)
+                        RealmActivity(fromDictionary: $0)
                     }
                  
                     observer.sendNext(activities)

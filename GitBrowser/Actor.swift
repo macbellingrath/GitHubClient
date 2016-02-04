@@ -5,7 +5,26 @@
 //	Copyright © 2016. All rights reserved.
 
 import Foundation
+import RealmSwift
 
+class RealmUser: Object {
+    dynamic var avatarUrl : String = ""
+    dynamic var gravatarId : String = ""
+    dynamic var id : Int = 0
+    dynamic var username : String = ""
+    dynamic var url : String = ""
+    
+    convenience init(fromDictionary dictionary: [String : AnyObject]){
+        self.init()
+        avatarUrl = dictionary["avatar_url"] as? String ?? ""
+        gravatarId = dictionary["gravatar_id"] as? String ?? ""
+        id = dictionary["id"] as? Int ?? 0
+        username = dictionary["login"] as? String ?? ""
+        url = dictionary["url"] as? String ?? ""
+        
+    }
+    
+}
 
 class User : NSObject, NSCoding{
 
@@ -35,7 +54,7 @@ class User : NSObject, NSCoding{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if avatarUrl != nil{
 			dictionary["avatar_url"] = avatarUrl
 		}

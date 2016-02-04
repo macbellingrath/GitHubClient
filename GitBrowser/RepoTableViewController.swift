@@ -8,18 +8,34 @@
 
 import UIKit
 import ReactiveCocoa
+import RealmSwift
 
 
 class RepoTableViewController: UITableViewController {
     
-    var activities: [Activity] = []
-    
-    var currentUser: User = User(un: "macbellingrath")
-    
+    var activities: [RealmActivity] = []
+   
+    lazy var currentUser: RealmUser = {
+        return RealmUser(fromDictionary: ["login" : "macbellingrath"])
+    }()
     func configureView() {
         currentUserFeedLabel.text = "Viewing " + currentUser.username + "'s public feed"
+        ObjectManager.sharedManger.getLocalEventsforUser(currentUser).startWithNext {
+            self.activities = $0
+            self.tableView.reloadData()
+        }
+        NetworkManager.sharedManager.fetchActivity(forUser: currentUser).startWithNext { activities in
+            self.activities = activities ; self.tableView.reloadData()
+           
+            let realm  = try! Realm()
+
+            try! realm.write({ () -> Void in
+                realm.add(activities)
+            })
+            
+            
+        }
         
-        NetworkManager.sharedManager.fetchActivity(forUser: currentUser).startWithNext { self.activities = $0 ; self.tableView.reloadData()}
         
     }
 
@@ -79,7 +95,7 @@ class RepoTableViewController: UITableViewController {
         cell.usernameLabel.text = activity.user.username
         cell.topTextLabel.text = activity.repo.name
     
-        cell.bottomTextLabel.text = activity.createdAt?.makeDateString()
+        cell.bottomTextLabel.text = activity.createdAt.makeDateString()
         let eventstr: String
         switch activity.eventType {
         case .Unknown: eventstr = "Unknown"

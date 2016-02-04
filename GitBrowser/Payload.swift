@@ -6,7 +6,17 @@
 
 
 import Foundation
+import RealmSwift
 
+
+class RealmPayload: Object {
+    dynamic var action: String = ""
+    convenience init(fromDictionary dictionary: NSDictionary){
+        self.init()
+        action = dictionary["action"] as? String ?? ""
+       
+    }
+  }
 
 class Payload : NSObject, NSCoding{
 
@@ -25,7 +35,7 @@ class Payload : NSObject, NSCoding{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if action != nil{
 			dictionary["action"] = action
 		}

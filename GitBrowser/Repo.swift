@@ -5,7 +5,18 @@
 //	Copyright © 2016. All rights reserved.
 
 import Foundation
-
+import RealmSwift
+class RealmRepo: Object {
+    dynamic var id: Int = 0
+    dynamic var name: String = ""
+    dynamic var url: String = ""
+    convenience init(fromDictionary dictionary: NSDictionary){
+        self.init()
+        id = dictionary["id"] as? Int ?? 0
+        name = dictionary["name"] as? String ?? ""
+        url = dictionary["url"] as? String ?? ""
+    }
+}
 
 class Repo : NSObject, NSCoding{
 

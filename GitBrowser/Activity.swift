@@ -6,6 +6,61 @@
 
 
 import Foundation
+import RealmSwift
+
+
+class RealmActivity: Object {
+    dynamic var user: RealmUser!
+    dynamic var createdAt : String = ""
+    dynamic var id : String = ""
+    dynamic var org : RealmUser!
+    dynamic var payload : RealmPayload?
+    dynamic var repo : RealmRepo!
+    dynamic var type : String = ""
+    var eventType: EventType {
+        return EventType(rawValue: type) ?? EventType.Unknown
+    }
+    
+//    override class func primaryKey() -> String {
+//        return "id"
+//    }
+    /**
+     * Instantiate the instance using the passed dictionary values to set the properties values
+     */
+   convenience init(fromDictionary dictionary: NSDictionary){
+    self.init()
+        if let actorData = dictionary["actor"] as? [String : AnyObject]{
+            user = RealmUser(fromDictionary: actorData)
+        }
+        
+        createdAt = dictionary["created_at"] as? String ?? ""
+        
+        
+        id = dictionary["id"] as? String ?? ""
+        if let orgData = dictionary["org"] as? [String : AnyObject]{
+            org = RealmUser(fromDictionary: orgData)
+        }
+        if let payloadData = dictionary["payload"] as? NSDictionary{
+            payload = RealmPayload(fromDictionary: payloadData)
+        }
+        if let repoData = dictionary["repo"] as? NSDictionary{
+            repo = RealmRepo(fromDictionary: repoData)
+        }
+        type = dictionary["type"] as? String ?? ""
+
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
 
 public enum EventType: String {
     case WatchEvent, ForkEvent, MemberEvent, Unknown
@@ -58,7 +113,7 @@ class Activity : NSObject, NSCoding{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if user != nil{
 			dictionary["actor"] = user.toDictionary()
 		}

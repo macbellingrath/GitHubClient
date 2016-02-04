@@ -49,6 +49,11 @@
 		E6C6E3F71C5111B4008A6AF7 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; };
 		E6C6E3FD1C5111F5008A6AF7 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3FC1C5111F5008A6AF7 /* RepoTableViewCell.swift */; };
 		E6C6E3FF1C51123D008A6AF7 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3FE1C51123D008A6AF7 /* Networking.swift */; };
+		E6C825181C639FFF00EABF70 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C825161C639FFF00EABF70 /* Realm.framework */; };
+		E6C825191C639FFF00EABF70 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C825171C639FFF00EABF70 /* RealmSwift.framework */; };
+		E6C8251A1C63A00500EABF70 /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C825161C639FFF00EABF70 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6C8251B1C63A00500EABF70 /* RealmSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C825171C639FFF00EABF70 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6C8251D1C63A78200EABF70 /* ObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C8251C1C63A78200EABF70 /* ObjectExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +80,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E6C8251A1C63A00500EABF70 /* Realm.framework in CopyFiles */,
+				E6C8251B1C63A00500EABF70 /* RealmSwift.framework in CopyFiles */,
 				E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in CopyFiles */,
 				E6630CA21C5120250083D3D5 /* Result.framework in CopyFiles */,
 				E6630C9F1C511F0E0083D3D5 /* Alamofire.framework in CopyFiles */,
@@ -138,6 +145,9 @@
 		E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		E6C6E3FC1C5111F5008A6AF7 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 		E6C6E3FE1C51123D008A6AF7 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		E6C825161C639FFF00EABF70 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		E6C825171C639FFF00EABF70 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		E6C8251C1C63A78200EABF70 /* ObjectExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +171,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6C825181C639FFF00EABF70 /* Realm.framework in Frameworks */,
+				E6C825191C639FFF00EABF70 /* RealmSwift.framework in Frameworks */,
 				E6630CA11C5120030083D3D5 /* Result.framework in Frameworks */,
 				E6630C9D1C511E0D0083D3D5 /* Alamofire.framework in Frameworks */,
 				E6C6E3F71C5111B4008A6AF7 /* ReactiveCocoa.framework in Frameworks */,
@@ -187,6 +199,7 @@
 				E6630CA61C5279470083D3D5 /* Payload.swift */,
 				E6630CA71C5279470083D3D5 /* Repo.swift */,
 				E6630CA81C5279470083D3D5 /* Activity.swift */,
+				E6C8251C1C63A78200EABF70 /* ObjectExt.swift */,
 			);
 			name = "Model Files";
 			sourceTree = "<group>";
@@ -238,6 +251,8 @@
 		E6C6E3C51C5104EC008A6AF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E6C825161C639FFF00EABF70 /* Realm.framework */,
+				E6C825171C639FFF00EABF70 /* RealmSwift.framework */,
 				E6630CA01C5120030083D3D5 /* Result.framework */,
 				E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */,
 				E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */,
@@ -488,6 +503,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -525,6 +542,7 @@
 				E6630CAB1C5279470083D3D5 /* Repo.swift in Sources */,
 				E6630CB01C5284340083D3D5 /* CircularImageView.swift in Sources */,
 				E6630CAA1C5279470083D3D5 /* Payload.swift in Sources */,
+				E6C8251D1C63A78200EABF70 /* ObjectExt.swift in Sources */,
 				E61EE7521C5AB78B00E850D3 /* NIBExtensions.swift in Sources */,
 				E61EE74C1C5AB19500E850D3 /* SegueExtension.swift in Sources */,
 				E6C6E3D61C51114E008A6AF7 /* AppDelegate.swift in Sources */,
