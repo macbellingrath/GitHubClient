@@ -9,6 +9,8 @@
 import UIKit
 import ReactiveCocoa
 import RealmSwift
+import OAuthSwift
+import SafariServices
 
 
 class RepoTableViewController: UITableViewController {
@@ -40,10 +42,28 @@ class RepoTableViewController: UITableViewController {
 
     @IBOutlet weak var currentUserFeedLabel: UILabel!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
+        let oauth = OAuth2Swift(
+            consumerKey: GitHubSecrets.clientID,
+            consumerSecret: GitHubSecrets.clientSecret,
+            authorizeUrl: GitHubSecrets.gitHubOAuthEndPoint,
+            responseType: "code")
+
+        
+        oauth.authorize_url_handler = 
+            SafariURLHandler(viewController: self.navigationController!)
+        
+
+        oauth.authorizeWithCallbackURL(GitHubSecrets.authorizationcallback, scope: "user+repo", state: "GITHUB", success: { (credential, response, parameters) in
+            print(credential, response, parameters)
+        
+            })  { print($0) }
+            //error
+
+
  
         configureView()
         
@@ -55,6 +75,8 @@ class RepoTableViewController: UITableViewController {
         clearsSelectionOnViewWillAppear = true
     }
 
+
+    
     // MARK: - Table view data source
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

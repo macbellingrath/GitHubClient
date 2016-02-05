@@ -24,10 +24,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.github.Gitbrowser</string>
+			<string>GitHub</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>Gitbrowser://</string>
+				<string>com.macbellingrath.gitbrowser</string>
 			</array>
 		</dict>
 	</array>
