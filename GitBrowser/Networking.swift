@@ -29,8 +29,7 @@ class NetworkManager {
     func fetchActivity(forUser user: RealmUser) -> SignalProducer<[RealmActivity], NSError> {
 
         return SignalProducer { observer, disposable in
-        
-      
+    
 
             Alamofire.request(.GET, self.baseURL + "users/\(user.username)/received_events", parameters: nil, encoding: ParameterEncoding.URL, headers: nil).responseJSON(options: .MutableContainers, completionHandler: { response in
                 print(response.request)

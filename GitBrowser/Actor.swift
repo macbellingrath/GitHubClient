@@ -21,9 +21,7 @@ class RealmUser: Object {
         id = dictionary["id"] as? Int ?? 0
         username = dictionary["login"] as? String ?? ""
         url = dictionary["url"] as? String ?? ""
-        
     }
-    
 }
 
 class User : NSObject, NSCoding{

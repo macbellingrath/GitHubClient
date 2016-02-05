@@ -15,22 +15,21 @@ class RepoTableViewController: UITableViewController {
     
     var activities: [RealmActivity] = []
    
-    lazy var currentUser: RealmUser = {
-        return RealmUser(fromDictionary: ["login" : "macbellingrath"])
-    }()
+    var currentUser = RealmUser(fromDictionary: ["login" : "macbellingrath"])
+    
     func configureView() {
         currentUserFeedLabel.text = "Viewing " + currentUser.username + "'s public feed"
-        ObjectManager.sharedManger.getLocalEventsforUser(currentUser).startWithNext {
-            self.activities = $0
-            self.tableView.reloadData()
-        }
+//        ObjectManager.sharedManger.getLocalEventsforUser(currentUser).startWithNext {
+//            self.activities = $0
+//            self.tableView.reloadData()
+//        }
         NetworkManager.sharedManager.fetchActivity(forUser: currentUser).startWithNext { activities in
             self.activities = activities ; self.tableView.reloadData()
            
             let realm  = try! Realm()
 
             try! realm.write({ () -> Void in
-                realm.add(activities)
+                realm.add(activities, update: true)
             })
             
             

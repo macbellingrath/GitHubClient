@@ -21,7 +21,7 @@ class ObjectManager {
             let realm = try! Realm()
 
             let predicate = NSPredicate(format: "user.username == %@", userToSearch.username)
-            let activities = realm.objects(RealmActivity).filter(predicate).flatMap{$0}
+            let activities = realm.objects(RealmActivity).filter(predicate).map{$0}
             observer.sendNext(activities)
             observer.sendCompleted()
             
