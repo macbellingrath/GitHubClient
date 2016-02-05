@@ -21,9 +21,9 @@ class RealmActivity: Object {
         return EventType(rawValue: type) ?? EventType.Unknown
     }
     
-    override static func primaryKey() -> String? {
-        return "id"
-    }
+//    override class func primaryKey() -> String {
+//        return "id"
+//    }
     /**
      * Instantiate the instance using the passed dictionary values to set the properties values
      */
@@ -52,6 +52,14 @@ class RealmActivity: Object {
 
     
 }
+
+
+
+
+
+
+
+
 
 
 public enum EventType: String {

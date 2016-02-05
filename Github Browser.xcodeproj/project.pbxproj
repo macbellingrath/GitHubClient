@@ -32,7 +32,6 @@
 		E69831851C5F8F9600D13694 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6A0F3181C5944A00068E0A9 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6A0F3171C5944A00068E0A9 /* CardTableViewCell.xib */; };
 		E6A0F31A1C5944EF0068E0A9 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A0F3191C5944EF0068E0A9 /* CardTableViewCell.swift */; };
-		E6A7C1201C64DA5C00507970 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A7C11F1C64DA5C00507970 /* Secrets.swift */; };
 		E6C6E3A41C510431008A6AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3A31C510431008A6AF7 /* AppDelegate.swift */; };
 		E6C6E3A91C510431008A6AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C6E3A71C510431008A6AF7 /* Main.storyboard */; };
 		E6C6E3AB1C510431008A6AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C6E3AA1C510431008A6AF7 /* Assets.xcassets */; };
@@ -58,62 +57,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E6A7C10F1C64D78F00507970 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6A7C1051C64D78F00507970 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F435027A1A6791B200038A29;
-			remoteInfo = OAuthSwift;
-		};
-		E6A7C1111C64D78F00507970 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6A7C1051C64D78F00507970 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F451E3C5195B8CD80051434C;
-			remoteInfo = OAuthSwiftDemo;
-		};
-		E6A7C1131C64D78F00507970 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6A7C1051C64D78F00507970 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C48B28021AFA598D00C7DEF6;
-			remoteInfo = OAuthSwiftOSX;
-		};
-		E6A7C1151C64D78F00507970 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6A7C1051C64D78F00507970 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C49FD5241AFB5DF500791E1A;
-			remoteInfo = OAuthSwiftOSXDemo;
-		};
-		E6A7C1171C64D78F00507970 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6A7C1051C64D78F00507970 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C4B6EE1E1BF74CE300443596;
-			remoteInfo = OAuthSwiftTVOS;
-		};
-		E6A7C1191C64D78F00507970 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6A7C1051C64D78F00507970 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C40890C01C11B37000E3146A;
-			remoteInfo = OAuthSwiftWatchOS;
-		};
-		E6A7C11B1C64D78F00507970 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6A7C1051C64D78F00507970 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C4D50DF71BFB693F0053B624;
-			remoteInfo = OAuthSwiftTests;
-		};
-		E6A7C11D1C64D7BB00507970 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6A7C1051C64D78F00507970 /* OAuthSwift.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F43502791A6791B200038A29;
-			remoteInfo = OAuthSwift;
-		};
 		E6C6E3B21C510431008A6AF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E6C6E3981C510431008A6AF7 /* Project object */;
@@ -176,8 +119,6 @@
 		E6A0F3161C593DC70068E0A9 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		E6A0F3171C5944A00068E0A9 /* CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 		E6A0F3191C5944EF0068E0A9 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
-		E6A7C1051C64D78F00507970 /* OAuthSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthSwift.xcodeproj; path = "../../../../Desktop/OAuthSwift-master/OAuthSwift.xcodeproj"; sourceTree = "<group>"; };
-		E6A7C11F1C64DA5C00507970 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		E6C6E3A01C510431008A6AF7 /* Github Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C6E3A31C510431008A6AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6C6E3A81C510431008A6AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -263,20 +204,6 @@
 			name = "Model Files";
 			sourceTree = "<group>";
 		};
-		E6A7C1061C64D78F00507970 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E6A7C1101C64D78F00507970 /* OAuthSwift.framework */,
-				E6A7C1121C64D78F00507970 /* OAuthSwiftDemo.app */,
-				E6A7C1141C64D78F00507970 /* OAuthSwift.framework */,
-				E6A7C1161C64D78F00507970 /* OAuthSwiftOSXDemo.app */,
-				E6A7C1181C64D78F00507970 /* OAuthSwift.framework */,
-				E6A7C11A1C64D78F00507970 /* OAuthSwift.framework */,
-				E6A7C11C1C64D78F00507970 /* OAuthSwiftTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		E6C6E3971C510431008A6AF7 = {
 			isa = PBXGroup;
 			children = (
@@ -324,7 +251,6 @@
 		E6C6E3C51C5104EC008A6AF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E6A7C1051C64D78F00507970 /* OAuthSwift.xcodeproj */,
 				E6C825161C639FFF00EABF70 /* Realm.framework */,
 				E6C825171C639FFF00EABF70 /* RealmSwift.framework */,
 				E6630CA01C5120030083D3D5 /* Result.framework */,
@@ -382,7 +308,6 @@
 			isa = PBXGroup;
 			children = (
 				E6C6E3D51C51114E008A6AF7 /* AppDelegate.swift */,
-				E6A7C11F1C64DA5C00507970 /* Secrets.swift */,
 				E6C6E3DC1C51114E008A6AF7 /* Assets.xcassets */,
 				E6C6E3DE1C51114E008A6AF7 /* LaunchScreen.storyboard */,
 				E6C6E3E11C51114E008A6AF7 /* Info.plist */,
@@ -442,7 +367,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E6A7C11E1C64D7BB00507970 /* PBXTargetDependency */,
 			);
 			name = GitBrowser;
 			productName = GitBrowser;
@@ -506,12 +430,6 @@
 			mainGroup = E6C6E3971C510431008A6AF7;
 			productRefGroup = E6C6E3A11C510431008A6AF7 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E6A7C1061C64D78F00507970 /* Products */;
-					ProjectRef = E6A7C1051C64D78F00507970 /* OAuthSwift.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				E6C6E39F1C510431008A6AF7 /* Github Browser */,
@@ -521,58 +439,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		E6A7C1101C64D78F00507970 /* OAuthSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OAuthSwift.framework;
-			remoteRef = E6A7C10F1C64D78F00507970 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E6A7C1121C64D78F00507970 /* OAuthSwiftDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = OAuthSwiftDemo.app;
-			remoteRef = E6A7C1111C64D78F00507970 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E6A7C1141C64D78F00507970 /* OAuthSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OAuthSwift.framework;
-			remoteRef = E6A7C1131C64D78F00507970 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E6A7C1161C64D78F00507970 /* OAuthSwiftOSXDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = OAuthSwiftOSXDemo.app;
-			remoteRef = E6A7C1151C64D78F00507970 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E6A7C1181C64D78F00507970 /* OAuthSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OAuthSwift.framework;
-			remoteRef = E6A7C1171C64D78F00507970 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E6A7C11A1C64D78F00507970 /* OAuthSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OAuthSwift.framework;
-			remoteRef = E6A7C1191C64D78F00507970 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E6A7C11C1C64D78F00507970 /* OAuthSwiftTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = OAuthSwiftTests.xctest;
-			remoteRef = E6A7C11B1C64D78F00507970 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E6C6E39E1C510431008A6AF7 /* Resources */ = {
@@ -674,7 +540,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6630CAB1C5279470083D3D5 /* Repo.swift in Sources */,
-				E6A7C1201C64DA5C00507970 /* Secrets.swift in Sources */,
 				E6630CB01C5284340083D3D5 /* CircularImageView.swift in Sources */,
 				E6630CAA1C5279470083D3D5 /* Payload.swift in Sources */,
 				E6C8251D1C63A78200EABF70 /* ObjectExt.swift in Sources */,
@@ -705,11 +570,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E6A7C11E1C64D7BB00507970 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OAuthSwift;
-			targetProxy = E6A7C11D1C64D7BB00507970 /* PBXContainerItemProxy */;
-		};
 		E6C6E3B31C510431008A6AF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E6C6E39F1C510431008A6AF7 /* Github Browser */;

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import OAuthSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,14 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-                    return true
+            return true
     }
     
-    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-        guard url.host == "com.macbellingrath.gitbrowser" else { return false }
-        OAuthSwift.handleOpenURL(url)
-        return true
+    func registerUserNotificationSettings() {
+        
     }
+   
 }
 
