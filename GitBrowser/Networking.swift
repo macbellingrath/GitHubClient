@@ -12,15 +12,6 @@ import Alamofire
 import RealmSwift
 
 
-//struct Owner {
-//    let name: String
-//    
-//}
-//struct Repo {
-//    var name: String
-//    var owner: Owner
-//}
-
 class NetworkManager {
     private let baseURL = "https://api.github.com/"
     

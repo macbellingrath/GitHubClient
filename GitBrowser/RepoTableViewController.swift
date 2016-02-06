@@ -9,6 +9,7 @@
 import UIKit
 import ReactiveCocoa
 import RealmSwift
+import OAuthSwift
 
 
 class RepoTableViewController: UITableViewController {
@@ -44,6 +45,26 @@ class RepoTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        SecurityManager().auth()
+        
+        
+        let oauth = OAuth2Swift(
+            consumerKey: GitHubSecrets.clientID,
+            consumerSecret: GitHubSecrets.clientSecret,
+            authorizeUrl: GitHubSecrets.gitHubOAuthEndPoint,
+            responseType: "code")
+        
+        
+        oauth.authorize_url_handler =
+            SafariURLHandler(viewController: self.navigationController!)
+        
+        
+        oauth.authorizeWithCallbackURL(GitHubSecrets.authorizationcallback, scope: "user+repo", state: "GITHUB", success: { (credential, response, parameters) in
+            print(credential, response, parameters)
+            
+            })  { print($0) }
+        //error
+
  
         configureView()
         
@@ -95,14 +116,7 @@ class RepoTableViewController: UITableViewController {
         cell.topTextLabel.text = activity.repo.name
     
         cell.bottomTextLabel.text = activity.createdAt.makeDateString()
-        let eventstr: String
-        switch activity.eventType {
-        case .Unknown: eventstr = "Unknown"
-        case .ForkEvent: eventstr = "Forked"
-        case .MemberEvent: eventstr = "Created"
-        case .WatchEvent: eventstr = "Watching"
-        }
-         cell.eventTypeTextLabel.text = eventstr
+        cell.eventTypeTextLabel.text = activity.eventType.description
        
         
         print(activity.type)

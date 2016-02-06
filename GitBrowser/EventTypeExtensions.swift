@@ -17,6 +17,7 @@ extension EventType {
         case .ForkEvent: return  "Forked"
         case .MemberEvent: return "Created"
         case .WatchEvent: return "Watching"
+        case .CreateEvent: return "Created"
         }
     }
 }

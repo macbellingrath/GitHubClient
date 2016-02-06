@@ -27,7 +27,7 @@
 			<string>com.github.Gitbrowser</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>Gitbrowser://</string>
+				<string>com.macbellingrath.gitbrowser</string>
 			</array>
 		</dict>
 	</array>

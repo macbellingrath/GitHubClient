@@ -21,9 +21,9 @@ class RealmActivity: Object {
         return EventType(rawValue: type) ?? EventType.Unknown
     }
     
-//    override class func primaryKey() -> String {
-//        return "id"
-//    }
+    override static func primaryKey() -> String {
+        return "id"
+    }
     /**
      * Instantiate the instance using the passed dictionary values to set the properties values
      */
@@ -63,7 +63,7 @@ class RealmActivity: Object {
 
 
 public enum EventType: String {
-    case WatchEvent, ForkEvent, MemberEvent, Unknown
+    case WatchEvent, ForkEvent, MemberEvent, CreateEvent, Unknown
 }
 
 class Activity : NSObject, NSCoding{

@@ -14,16 +14,18 @@
 		E61EE7541C5AB98F00E850D3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE7531C5AB98F00E850D3 /* DetailViewController.swift */; };
 		E61EE7561C5ABF1900E850D3 /* EventTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE7551C5ABF1900E850D3 /* EventTypeExtensions.swift */; };
 		E6630C9D1C511E0D0083D3D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; };
-		E6630C9F1C511F0E0083D3D5 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6630C9F1C511F0E0083D3D5 /* Alamofire.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6630CA11C5120030083D3D5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; };
-		E6630CA21C5120250083D3D5 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6630CA21C5120250083D3D5 /* Result.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6630CA41C5274380083D3D5 /* RepoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA31C5274380083D3D5 /* RepoTableViewController.swift */; };
 		E6630CA91C5279470083D3D5 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA51C5279470083D3D5 /* Actor.swift */; };
 		E6630CAA1C5279470083D3D5 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA61C5279470083D3D5 /* Payload.swift */; };
 		E6630CAB1C5279470083D3D5 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA71C5279470083D3D5 /* Repo.swift */; };
 		E6630CAC1C5279470083D3D5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA81C5279470083D3D5 /* Activity.swift */; };
-		E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6630CB01C5284340083D3D5 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CAF1C5284340083D3D5 /* CircularImageView.swift */; };
+		E66807881C66318800CC34BD /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66807871C66318800CC34BD /* Secrets.swift */; };
+		E668078A1C663BB500CC34BD /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66807891C663BB500CC34BD /* Security.swift */; };
 		E698317F1C5F8F2800D13694 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; };
 		E69831801C5F8F2800D13694 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; };
 		E69831811C5F8F2800D13694 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; };
@@ -51,8 +53,8 @@
 		E6C6E3FF1C51123D008A6AF7 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3FE1C51123D008A6AF7 /* Networking.swift */; };
 		E6C825181C639FFF00EABF70 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C825161C639FFF00EABF70 /* Realm.framework */; };
 		E6C825191C639FFF00EABF70 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C825171C639FFF00EABF70 /* RealmSwift.framework */; };
-		E6C8251A1C63A00500EABF70 /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C825161C639FFF00EABF70 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E6C8251B1C63A00500EABF70 /* RealmSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C825171C639FFF00EABF70 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6C8251A1C63A00500EABF70 /* Realm.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = E6C825161C639FFF00EABF70 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6C8251B1C63A00500EABF70 /* RealmSwift.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = E6C825171C639FFF00EABF70 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6C8251D1C63A78200EABF70 /* ObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C8251C1C63A78200EABF70 /* ObjectExt.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,18 +76,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E6630C9E1C511EF40083D3D5 /* CopyFiles */ = {
+		E6630C9E1C511EF40083D3D5 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E6C8251A1C63A00500EABF70 /* Realm.framework in CopyFiles */,
-				E6C8251B1C63A00500EABF70 /* RealmSwift.framework in CopyFiles */,
-				E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in CopyFiles */,
-				E6630CA21C5120250083D3D5 /* Result.framework in CopyFiles */,
-				E6630C9F1C511F0E0083D3D5 /* Alamofire.framework in CopyFiles */,
+				E6C8251A1C63A00500EABF70 /* Realm.framework in Copy Files */,
+				E6C8251B1C63A00500EABF70 /* RealmSwift.framework in Copy Files */,
+				E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in Copy Files */,
+				E6630CA21C5120250083D3D5 /* Result.framework in Copy Files */,
+				E6630C9F1C511F0E0083D3D5 /* Alamofire.framework in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E69831821C5F8F4C00D13694 /* CopyFiles */ = {
@@ -116,6 +119,8 @@
 		E6630CA71C5279470083D3D5 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		E6630CA81C5279470083D3D5 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		E6630CAF1C5284340083D3D5 /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
+		E66807871C66318800CC34BD /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		E66807891C663BB500CC34BD /* Security.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
 		E6A0F3161C593DC70068E0A9 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		E6A0F3171C5944A00068E0A9 /* CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 		E6A0F3191C5944EF0068E0A9 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
@@ -277,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				E6630CA31C5274380083D3D5 /* RepoTableViewController.swift */,
+				E66807871C66318800CC34BD /* Secrets.swift */,
 				E61EE7531C5AB98F00E850D3 /* DetailViewController.swift */,
 				E61EE7551C5ABF1900E850D3 /* EventTypeExtensions.swift */,
 				E61EE7511C5AB78B00E850D3 /* NIBExtensions.swift */,
@@ -284,6 +290,7 @@
 				E61EE74B1C5AB19500E850D3 /* SegueExtension.swift */,
 				E61EE74D1C5AB68E00E850D3 /* CellIdentifierExtension.swift */,
 				E6630CAF1C5284340083D3D5 /* CircularImageView.swift */,
+				E66807891C663BB500CC34BD /* Security.swift */,
 				E6C6E3FE1C51123D008A6AF7 /* Networking.swift */,
 				E6C6E3FC1C5111F5008A6AF7 /* RepoTableViewCell.swift */,
 				E6630CAD1C52794C0083D3D5 /* Model Files */,
@@ -362,7 +369,7 @@
 				E6C6E3D01C51114E008A6AF7 /* Frameworks */,
 				E6C6E3D11C51114E008A6AF7 /* Resources */,
 				E6C6E3F31C511173008A6AF7 /* Run Script */,
-				E6630C9E1C511EF40083D3D5 /* CopyFiles */,
+				E6630C9E1C511EF40083D3D5 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -540,9 +547,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6630CAB1C5279470083D3D5 /* Repo.swift in Sources */,
+				E66807881C66318800CC34BD /* Secrets.swift in Sources */,
 				E6630CB01C5284340083D3D5 /* CircularImageView.swift in Sources */,
 				E6630CAA1C5279470083D3D5 /* Payload.swift in Sources */,
 				E6C8251D1C63A78200EABF70 /* ObjectExt.swift in Sources */,
+				E668078A1C663BB500CC34BD /* Security.swift in Sources */,
 				E61EE7521C5AB78B00E850D3 /* NIBExtensions.swift in Sources */,
 				E61EE74C1C5AB19500E850D3 /* SegueExtension.swift in Sources */,
 				E6C6E3D61C51114E008A6AF7 /* AppDelegate.swift in Sources */,
