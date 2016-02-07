@@ -1,2 +1,2 @@
-github "ReactiveCocoa/ReactiveCocoa" "2aeab9f"
+github "ReactiveCocoa/ReactiveCocoa" "def976d"
 github "Alamofire/Alamofire" ~> 3.0

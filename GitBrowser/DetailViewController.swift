@@ -15,6 +15,7 @@ protocol ViewConfigurable {
     weak var repoNameLabel: UILabel! { get set }
     weak var eventTypeLabel: UILabel! { get set }
     weak var dateLabel: UILabel! { get set }
+    weak var repoDescriptionTextView: UITextView! { get set }
     
     
 }
@@ -26,6 +27,7 @@ extension ViewConfigurable {
         repoNameLabel.text = activity.repo.name
         eventTypeLabel.text = activity.eventType.description
         dateLabel.text = activity.createdAt?.makeDateString()
+        repoDescriptionTextView.text = activity.repo.description
         
     }
 
@@ -44,11 +46,12 @@ class DetailViewController: UIViewController, ViewConfigurable {
     
     
     @IBOutlet weak var dateLabel: UILabel!
+    
+    @IBOutlet weak var repoDescriptionTextView: UITextView!
 
     override func viewDidLayoutSubviews() {
         configureView(forActivity: activity)
     }
-
 
     
 }

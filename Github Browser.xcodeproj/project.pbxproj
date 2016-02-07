@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E60B75611C678A4000190794 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3C11C5104DC008A6AF7 /* ReactiveCocoa.framework */; };
+		E60B75631C678CA100190794 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60B75621C678CA100190794 /* Result.framework */; };
+		E60B75651C678CDA00190794 /* ReposCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B75641C678CDA00190794 /* ReposCollectionViewController.swift */; };
+		E60B75661C678D0100190794 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3FE1C51123D008A6AF7 /* Networking.swift */; };
+		E60B75671C678D2800190794 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA51C5279470083D3D5 /* Actor.swift */; };
+		E60B75681C678D2800190794 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA61C5279470083D3D5 /* Payload.swift */; };
+		E60B75691C678D2800190794 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA71C5279470083D3D5 /* Repo.swift */; };
+		E60B756A1C678D2800190794 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA81C5279470083D3D5 /* Activity.swift */; };
+		E60B756C1C678DC300190794 /* RepoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B756B1C678DC300190794 /* RepoCollectionViewCell.swift */; };
+		E60B756D1C678E4000190794 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CAF1C5284340083D3D5 /* CircularImageView.swift */; };
+		E60B756E1C678F5D00190794 /* EventTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE7551C5ABF1900E850D3 /* EventTypeExtensions.swift */; };
+		E60B756F1C678F6300190794 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE7531C5AB98F00E850D3 /* DetailViewController.swift */; };
+		E60B75701C678F6E00190794 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE74F1C5AB73C00E850D3 /* StringExtensions.swift */; };
+		E60B75711C6797C500190794 /* SegueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE74B1C5AB19500E850D3 /* SegueExtension.swift */; };
 		E61EE74C1C5AB19500E850D3 /* SegueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE74B1C5AB19500E850D3 /* SegueExtension.swift */; };
 		E61EE74E1C5AB68E00E850D3 /* CellIdentifierExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE74D1C5AB68E00E850D3 /* CellIdentifierExtension.swift */; };
 		E61EE7501C5AB73C00E850D3 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE74F1C5AB73C00E850D3 /* StringExtensions.swift */; };
@@ -36,10 +50,6 @@
 		E6C6E3A91C510431008A6AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C6E3A71C510431008A6AF7 /* Main.storyboard */; };
 		E6C6E3AB1C510431008A6AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C6E3AA1C510431008A6AF7 /* Assets.xcassets */; };
 		E6C6E3B61C510431008A6AF7 /* Github_BrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3B51C510431008A6AF7 /* Github_BrowserTests.swift */; };
-		E6C6E3C21C5104DC008A6AF7 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3C11C5104DC008A6AF7 /* ReactiveCocoa.framework */; };
-		E6C6E3C81C510567008A6AF7 /* RepoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3C71C510567008A6AF7 /* RepoTableViewController.swift */; };
-		E6C6E3CA1C51058D008A6AF7 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3C91C51058D008A6AF7 /* RepoTableViewCell.swift */; };
-		E6C6E3CC1C5105A9008A6AF7 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3CB1C5105A9008A6AF7 /* Networking.swift */; };
 		E6C6E3CE1C510E04008A6AF7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3CD1C510E04008A6AF7 /* Alamofire.framework */; };
 		E6C6E3D61C51114E008A6AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3D51C51114E008A6AF7 /* AppDelegate.swift */; };
 		E6C6E3DB1C51114E008A6AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C6E3D91C51114E008A6AF7 /* Main.storyboard */; };
@@ -96,6 +106,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E60B75621C678CA100190794 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/tvOS/Result.framework; sourceTree = "<group>"; };
+		E60B75641C678CDA00190794 /* ReposCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposCollectionViewController.swift; sourceTree = "<group>"; };
+		E60B756B1C678DC300190794 /* RepoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCollectionViewCell.swift; sourceTree = "<group>"; };
 		E61EE74B1C5AB19500E850D3 /* SegueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueExtension.swift; sourceTree = "<group>"; };
 		E61EE74D1C5AB68E00E850D3 /* CellIdentifierExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellIdentifierExtension.swift; sourceTree = "<group>"; };
 		E61EE74F1C5AB73C00E850D3 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
@@ -121,9 +134,6 @@
 		E6C6E3B51C510431008A6AF7 /* Github_BrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Github_BrowserTests.swift; sourceTree = "<group>"; };
 		E6C6E3B71C510431008A6AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C6E3C11C5104DC008A6AF7 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/tvOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
-		E6C6E3C71C510567008A6AF7 /* RepoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewController.swift; sourceTree = "<group>"; };
-		E6C6E3C91C51058D008A6AF7 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
-		E6C6E3CB1C5105A9008A6AF7 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		E6C6E3CD1C510E04008A6AF7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
 		E6C6E3D31C51114E008A6AF7 /* GitBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C6E3D51C51114E008A6AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,7 +155,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6C6E3C21C5104DC008A6AF7 /* ReactiveCocoa.framework in Frameworks */,
+				E60B75631C678CA100190794 /* Result.framework in Frameworks */,
+				E60B75611C678A4000190794 /* ReactiveCocoa.framework in Frameworks */,
 				E6C6E3CE1C510E04008A6AF7 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,9 +229,9 @@
 		E6C6E3A21C510431008A6AF7 /* Github Browser */ = {
 			isa = PBXGroup;
 			children = (
-				E6C6E3C71C510567008A6AF7 /* RepoTableViewController.swift */,
-				E6C6E3CB1C5105A9008A6AF7 /* Networking.swift */,
-				E6C6E3C91C51058D008A6AF7 /* RepoTableViewCell.swift */,
+				E60B75641C678CDA00190794 /* ReposCollectionViewController.swift */,
+				E60B756B1C678DC300190794 /* RepoCollectionViewCell.swift */,
+				E6C6E3A71C510431008A6AF7 /* Main.storyboard */,
 				E6C6E3C61C5104FB008A6AF7 /* Supporting Files */,
 			);
 			path = "Github Browser";
@@ -238,6 +249,7 @@
 		E6C6E3C51C5104EC008A6AF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E60B75621C678CA100190794 /* Result.framework */,
 				E6630CA01C5120030083D3D5 /* Result.framework */,
 				E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */,
 				E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */,
@@ -251,7 +263,6 @@
 			isa = PBXGroup;
 			children = (
 				E6C6E3A31C510431008A6AF7 /* AppDelegate.swift */,
-				E6C6E3A71C510431008A6AF7 /* Main.storyboard */,
 				E6C6E3AA1C510431008A6AF7 /* Assets.xcassets */,
 				E6C6E3AC1C510431008A6AF7 /* Info.plist */,
 			);
@@ -471,6 +482,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/tvOS/ReactiveCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/tvOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/tvOS/Result.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -503,10 +515,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60B75701C678F6E00190794 /* StringExtensions.swift in Sources */,
+				E60B75711C6797C500190794 /* SegueExtension.swift in Sources */,
+				E60B756F1C678F6300190794 /* DetailViewController.swift in Sources */,
+				E60B75651C678CDA00190794 /* ReposCollectionViewController.swift in Sources */,
+				E60B756D1C678E4000190794 /* CircularImageView.swift in Sources */,
 				E6C6E3A41C510431008A6AF7 /* AppDelegate.swift in Sources */,
-				E6C6E3C81C510567008A6AF7 /* RepoTableViewController.swift in Sources */,
-				E6C6E3CA1C51058D008A6AF7 /* RepoTableViewCell.swift in Sources */,
-				E6C6E3CC1C5105A9008A6AF7 /* Networking.swift in Sources */,
+				E60B756A1C678D2800190794 /* Activity.swift in Sources */,
+				E60B75661C678D0100190794 /* Networking.swift in Sources */,
+				E60B756C1C678DC300190794 /* RepoCollectionViewCell.swift in Sources */,
+				E60B75691C678D2800190794 /* Repo.swift in Sources */,
+				E60B75681C678D2800190794 /* Payload.swift in Sources */,
+				E60B756E1C678F5D00190794 /* EventTypeExtensions.swift in Sources */,
+				E60B75671C678D2800190794 /* Actor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
