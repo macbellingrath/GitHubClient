@@ -11,8 +11,8 @@ import Foundation
 class SecurityManager {
     
     func auth() {
-    var accessControlError: Unmanaged<CFError>?
-    guard let accessControl = SecAccessControlCreateWithFlags(kCFAllocatorDefault, kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly, SecAccessControlCreateFlags.UserPresence, &accessControlError) else { return print(1) }
+    let accessControlError: UnsafeMutablePointer<Unmanaged<CFError>?> = nil
+    guard let accessControl = SecAccessControlCreateWithFlags(kCFAllocatorDefault, kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly, SecAccessControlCreateFlags.UserPresence, accessControlError) else { return print(1) }
     
     let password = "password"
     
