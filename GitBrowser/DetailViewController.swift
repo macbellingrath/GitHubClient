@@ -32,6 +32,10 @@ extension ViewConfigurable {
     }
 
 }
+protocol RepoDetailViewRepresentable{
+    func configure(forRepo: Repo)
+}
+
 
 class DetailViewController: UIViewController, ViewConfigurable {
     
@@ -52,10 +56,7 @@ class DetailViewController: UIViewController, ViewConfigurable {
 
     override func viewDidLayoutSubviews() {
         configureView(forActivity: activity)
-        
-        NetworkManager.sharedManager.getRepoDetail(forRepo: activity.repo).zipWith(NetworkManager.sharedManager.fetchActivity(forUser: activity.user)).startWithNext { a,b in
-            
-        }
+     
         
         NetworkManager.sharedManager.getRepoDetail(forRepo: activity.repo).startWithNext {
             self.repoDetail = $0

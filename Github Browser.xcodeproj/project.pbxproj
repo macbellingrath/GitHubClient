@@ -29,6 +29,10 @@
 		E61EE7521C5AB78B00E850D3 /* NIBExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE7511C5AB78B00E850D3 /* NIBExtensions.swift */; };
 		E61EE7541C5AB98F00E850D3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE7531C5AB98F00E850D3 /* DetailViewController.swift */; };
 		E61EE7561C5ABF1900E850D3 /* EventTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE7551C5ABF1900E850D3 /* EventTypeExtensions.swift */; };
+		E648E7051C68DE4000339DA4 /* RepoDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E648E7041C68DE4000339DA4 /* RepoDetailView.xib */; };
+		E648E7061C68DE4600339DA4 /* RepoDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E648E7041C68DE4000339DA4 /* RepoDetailView.xib */; };
+		E648E7081C68DEA800339DA4 /* RepoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E648E7071C68DEA800339DA4 /* RepoDetailView.swift */; };
+		E648E7091C68DEA800339DA4 /* RepoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E648E7071C68DEA800339DA4 /* RepoDetailView.swift */; };
 		E6630C9D1C511E0D0083D3D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; };
 		E6630C9F1C511F0E0083D3D5 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6630CA11C5120030083D3D5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; };
@@ -118,6 +122,8 @@
 		E61EE7511C5AB78B00E850D3 /* NIBExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NIBExtensions.swift; sourceTree = "<group>"; };
 		E61EE7531C5AB98F00E850D3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E61EE7551C5ABF1900E850D3 /* EventTypeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTypeExtensions.swift; sourceTree = "<group>"; };
+		E648E7041C68DE4000339DA4 /* RepoDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepoDetailView.xib; sourceTree = "<group>"; };
+		E648E7071C68DEA800339DA4 /* RepoDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailView.swift; sourceTree = "<group>"; };
 		E6630CA01C5120030083D3D5 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		E6630CA31C5274380083D3D5 /* RepoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewController.swift; sourceTree = "<group>"; };
 		E6630CA51C5279470083D3D5 /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
@@ -234,6 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				E60B75641C678CDA00190794 /* ReposCollectionViewController.swift */,
+				E648E7041C68DE4000339DA4 /* RepoDetailView.xib */,
+				E648E7071C68DEA800339DA4 /* RepoDetailView.swift */,
 				E60B756B1C678DC300190794 /* RepoCollectionViewCell.swift */,
 				E6C6E3A71C510431008A6AF7 /* Main.storyboard */,
 				E6C6E3C61C5104FB008A6AF7 /* Supporting Files */,
@@ -445,6 +453,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E648E7051C68DE4000339DA4 /* RepoDetailView.xib in Resources */,
 				E6C6E3AB1C510431008A6AF7 /* Assets.xcassets in Resources */,
 				E6C6E3A91C510431008A6AF7 /* Main.storyboard in Resources */,
 			);
@@ -465,6 +474,7 @@
 				E6C6E3DD1C51114E008A6AF7 /* Assets.xcassets in Resources */,
 				E6C6E3DB1C51114E008A6AF7 /* Main.storyboard in Resources */,
 				E6A0F3181C5944A00068E0A9 /* CardTableViewCell.xib in Resources */,
+				E648E7061C68DE4600339DA4 /* RepoDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +535,7 @@
 				E60B75651C678CDA00190794 /* ReposCollectionViewController.swift in Sources */,
 				E60B756D1C678E4000190794 /* CircularImageView.swift in Sources */,
 				E6C6E3A41C510431008A6AF7 /* AppDelegate.swift in Sources */,
+				E648E7081C68DEA800339DA4 /* RepoDetailView.swift in Sources */,
 				E60B756A1C678D2800190794 /* Activity.swift in Sources */,
 				E60B75661C678D0100190794 /* Networking.swift in Sources */,
 				E60B756C1C678DC300190794 /* RepoCollectionViewCell.swift in Sources */,
@@ -557,6 +568,7 @@
 				E6C6E3D61C51114E008A6AF7 /* AppDelegate.swift in Sources */,
 				E6630CA41C5274380083D3D5 /* RepoTableViewController.swift in Sources */,
 				E6A0F31A1C5944EF0068E0A9 /* CardTableViewCell.swift in Sources */,
+				E648E7091C68DEA800339DA4 /* RepoDetailView.swift in Sources */,
 				E61EE7561C5ABF1900E850D3 /* EventTypeExtensions.swift in Sources */,
 				E6630CAC1C5279470083D3D5 /* Activity.swift in Sources */,
 				E61EE74E1C5AB68E00E850D3 /* CellIdentifierExtension.swift in Sources */,

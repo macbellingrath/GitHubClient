@@ -16,7 +16,6 @@ class RepoCollectionViewCell: UICollectionViewCell, ViewConfigurable {
     
     @IBOutlet weak var eventTypeLabel: UILabel!
     
-    
     @IBOutlet weak var avatarImgView: CircularImageView!
     
     @IBOutlet weak var dateLabel: UILabel!
