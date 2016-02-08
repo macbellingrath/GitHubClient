@@ -36,6 +36,7 @@ extension ViewConfigurable {
 class DetailViewController: UIViewController, ViewConfigurable {
     
     var activity: Activity!
+    var repoDetail: RepoDetail!
     
     @IBOutlet weak var avatarImgView: CircularImageView!
     @IBOutlet weak var userNameLabel: UILabel!
@@ -51,6 +52,15 @@ class DetailViewController: UIViewController, ViewConfigurable {
 
     override func viewDidLayoutSubviews() {
         configureView(forActivity: activity)
+        
+        NetworkManager.sharedManager.getRepoDetail(forRepo: activity.repo).zipWith(NetworkManager.sharedManager.fetchActivity(forUser: activity.user)).startWithNext { a,b in
+            
+        }
+        
+        NetworkManager.sharedManager.getRepoDetail(forRepo: activity.repo).startWithNext {
+            self.repoDetail = $0
+            self.repoDescriptionTextView.text = $0.repoDescription
+        }
     }
 
     

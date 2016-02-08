@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E600C4431C68D3640098360A /* RepoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E600C4421C68D3640098360A /* RepoDetail.swift */; };
+		E600C4441C68D3640098360A /* RepoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E600C4421C68D3640098360A /* RepoDetail.swift */; };
 		E60B75611C678A4000190794 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3C11C5104DC008A6AF7 /* ReactiveCocoa.framework */; };
 		E60B75631C678CA100190794 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60B75621C678CA100190794 /* Result.framework */; };
 		E60B75651C678CDA00190794 /* ReposCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B75641C678CDA00190794 /* ReposCollectionViewController.swift */; };
@@ -106,6 +108,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E600C4421C68D3640098360A /* RepoDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetail.swift; sourceTree = "<group>"; };
 		E60B75621C678CA100190794 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/tvOS/Result.framework; sourceTree = "<group>"; };
 		E60B75641C678CDA00190794 /* ReposCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposCollectionViewController.swift; sourceTree = "<group>"; };
 		E60B756B1C678DC300190794 /* RepoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -197,6 +200,7 @@
 				E6630CA51C5279470083D3D5 /* Actor.swift */,
 				E6630CA61C5279470083D3D5 /* Payload.swift */,
 				E6630CA71C5279470083D3D5 /* Repo.swift */,
+				E600C4421C68D3640098360A /* RepoDetail.swift */,
 				E6630CA81C5279470083D3D5 /* Activity.swift */,
 			);
 			name = "Model Files";
@@ -527,6 +531,7 @@
 				E60B75691C678D2800190794 /* Repo.swift in Sources */,
 				E60B75681C678D2800190794 /* Payload.swift in Sources */,
 				E60B756E1C678F5D00190794 /* EventTypeExtensions.swift in Sources */,
+				E600C4431C68D3640098360A /* RepoDetail.swift in Sources */,
 				E60B75671C678D2800190794 /* Actor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,6 +553,7 @@
 				E6630CAA1C5279470083D3D5 /* Payload.swift in Sources */,
 				E61EE7521C5AB78B00E850D3 /* NIBExtensions.swift in Sources */,
 				E61EE74C1C5AB19500E850D3 /* SegueExtension.swift in Sources */,
+				E600C4441C68D3640098360A /* RepoDetail.swift in Sources */,
 				E6C6E3D61C51114E008A6AF7 /* AppDelegate.swift in Sources */,
 				E6630CA41C5274380083D3D5 /* RepoTableViewController.swift in Sources */,
 				E6A0F31A1C5944EF0068E0A9 /* CardTableViewCell.swift in Sources */,
