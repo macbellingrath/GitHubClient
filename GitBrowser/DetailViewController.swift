@@ -16,11 +16,9 @@ protocol ViewConfigurable {
     weak var eventTypeLabel: UILabel! { get set }
     weak var dateLabel: UILabel! { get set }
     weak var repoDescriptionTextView: UITextView! { get set }
-    
-    
 }
+
 extension ViewConfigurable {
-    
     func configureView(forActivity activity: Activity) {
     NetworkManager.sharedManager.getImageFromURL(activity.user.avatarUrl).startWithNext { self.avatarImgView.image = $0 }
         userNameLabel.text = activity.user.username
@@ -28,10 +26,9 @@ extension ViewConfigurable {
         eventTypeLabel.text = activity.eventType.description
         dateLabel.text = activity.createdAt?.makeDateString()
         repoDescriptionTextView.text = activity.repo.description
-        
     }
-
 }
+
 protocol RepoDetailViewRepresentable{
     func configure(forRepo: Repo)
 }
@@ -44,20 +41,12 @@ class DetailViewController: UIViewController, ViewConfigurable {
     
     @IBOutlet weak var avatarImgView: CircularImageView!
     @IBOutlet weak var userNameLabel: UILabel!
-    
     @IBOutlet weak var repoNameLabel: UILabel!
-    
     @IBOutlet weak var eventTypeLabel: UILabel!
-    
-    
     @IBOutlet weak var dateLabel: UILabel!
-    
     @IBOutlet weak var repoDescriptionTextView: UITextView!
-
     override func viewDidLayoutSubviews() {
         configureView(forActivity: activity)
-     
-        
         NetworkManager.sharedManager.getRepoDetail(forRepo: activity.repo).startWithNext {
             self.repoDetail = $0
             self.repoDescriptionTextView.text = $0.repoDescription
