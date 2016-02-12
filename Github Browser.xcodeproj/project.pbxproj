@@ -29,8 +29,6 @@
 		E61EE7521C5AB78B00E850D3 /* NIBExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE7511C5AB78B00E850D3 /* NIBExtensions.swift */; };
 		E61EE7541C5AB98F00E850D3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE7531C5AB98F00E850D3 /* DetailViewController.swift */; };
 		E61EE7561C5ABF1900E850D3 /* EventTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EE7551C5ABF1900E850D3 /* EventTypeExtensions.swift */; };
-		E648E7051C68DE4000339DA4 /* RepoDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E648E7041C68DE4000339DA4 /* RepoDetailView.xib */; };
-		E648E7061C68DE4600339DA4 /* RepoDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E648E7041C68DE4000339DA4 /* RepoDetailView.xib */; };
 		E648E7081C68DEA800339DA4 /* RepoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E648E7071C68DEA800339DA4 /* RepoDetailView.swift */; };
 		E648E7091C68DEA800339DA4 /* RepoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E648E7071C68DEA800339DA4 /* RepoDetailView.swift */; };
 		E6630C9D1C511E0D0083D3D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; };
@@ -44,6 +42,7 @@
 		E6630CAC1C5279470083D3D5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA81C5279470083D3D5 /* Activity.swift */; };
 		E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6630CB01C5284340083D3D5 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CAF1C5284340083D3D5 /* CircularImageView.swift */; };
+		E66EEDFF1C6E25A5000DEADE /* RepoDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E648E7041C68DE4000339DA4 /* RepoDetailView.xib */; };
 		E698317F1C5F8F2800D13694 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; };
 		E69831801C5F8F2800D13694 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; };
 		E69831811C5F8F2800D13694 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; };
@@ -453,7 +452,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E648E7051C68DE4000339DA4 /* RepoDetailView.xib in Resources */,
+				E66EEDFF1C6E25A5000DEADE /* RepoDetailView.xib in Resources */,
 				E6C6E3AB1C510431008A6AF7 /* Assets.xcassets in Resources */,
 				E6C6E3A91C510431008A6AF7 /* Main.storyboard in Resources */,
 			);
@@ -474,7 +473,6 @@
 				E6C6E3DD1C51114E008A6AF7 /* Assets.xcassets in Resources */,
 				E6C6E3DB1C51114E008A6AF7 /* Main.storyboard in Resources */,
 				E6A0F3181C5944A00068E0A9 /* CardTableViewCell.xib in Resources */,
-				E648E7061C68DE4600339DA4 /* RepoDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
