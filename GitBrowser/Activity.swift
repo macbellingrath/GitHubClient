@@ -58,7 +58,7 @@ class Activity : NSObject, NSCoding{
 	 */
 	func toDictionary() -> NSDictionary
 	{
-		var dictionary = NSMutableDictionary()
+		let dictionary = NSMutableDictionary()
 		if user != nil{
 			dictionary["actor"] = user.toDictionary()
 		}

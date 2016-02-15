@@ -10,7 +10,7 @@ import UIKit
 import ReactiveCocoa
 
 
-class RepoTableViewController: UITableViewController {
+class RepoTableViewController: UITableViewController, UIViewControllerPreviewingDelegate {
     
     var activities: [Activity] = []
     
@@ -19,12 +19,14 @@ class RepoTableViewController: UITableViewController {
     func configureView() {
         currentUserFeedLabel.text = "Viewing " + currentUser.username + "'s public feed"
         
-        NetworkManager.sharedManager.fetchActivity(forUser: currentUser).startWithNext { self.activities = $0 ; self.tableView.reloadData()}
+        NetworkManager.sharedManager.fetchActivity(forUser: currentUser).startWithNext {
+            
+            self.activities = $0
+            self.tableView.reloadData()}
         
     }
 
     @IBOutlet weak var currentUserFeedLabel: UILabel!
-    
     
     
     override func viewDidLoad() {
@@ -38,6 +40,12 @@ class RepoTableViewController: UITableViewController {
         tableView.registerNib(cellNib, forCellReuseIdentifier: UITableViewCellIdentifier.CardTableViewCell.rawValue)
         
         clearsSelectionOnViewWillAppear = true
+        
+        if traitCollection.forceTouchCapability == .Available {
+            registerForPreviewingWithDelegate(self, sourceView: view)
+        }
+        
+
     }
 
     // MARK: - Table view data source
@@ -46,9 +54,6 @@ class RepoTableViewController: UITableViewController {
         
         return activities.count
     }
-    
-    
-    
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -97,8 +102,14 @@ class RepoTableViewController: UITableViewController {
             cell.avatarimgview.image = $0; cell.avatarimgview.makeRound()
         }
         
+        if traitCollection.forceTouchCapability == .Unavailable {
+        let longpressgr = UILongPressGestureRecognizer(target: self, action: "showPreview:")
+        longpressgr.minimumPressDuration = 1.0
+        
+        cell.addGestureRecognizer(longpressgr)
+        }
 
-        return cell 
+        return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -109,7 +120,50 @@ class RepoTableViewController: UITableViewController {
   override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 125
     }
+    
+    
+ // UIViewControllerPreviewingDelegate
+    
+    func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        if let indexPath = tableView.indexPathForRowAtPoint(location) {
+            previewingContext.sourceRect = tableView.rectForRowAtIndexPath(indexPath)
+            return viewControllerForIndexPath(indexPath)
+        }
+        return nil
+    }
+    
+    func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
+        showViewController(viewControllerToCommit, sender: self)
+    }
 
+    func viewControllerForIndexPath(indexPath: NSIndexPath) -> DetailViewController {
+        
+        let activity = activities[indexPath.row]
+        let detailVC = DetailViewController()
+        detailVC.activity = activity
+        
+        return detailVC
+    }
+    override func previewActionItems() -> [UIPreviewActionItem] {
+        let starRepoAction = UIPreviewAction(title: "Star", style: .Default) { action, vc  in
+            // Do Starring action here
+            guard let detailvc = vc as? DetailViewController, let activity = detailvc.activity else { return }
+            
+            print(activity)
+        }
+        return [starRepoAction]
+    }
+    
+    func showPreview(sender: UIGestureRecognizer) {
+
+        let loc = sender.locationInView(view)
+        if let indexPath = tableView.indexPathForRowAtPoint(loc) {
+            let vc = viewControllerForIndexPath(indexPath)
+            
+       
+            presentViewController(vc, animated: true, completion: nil)
+        }
+    }
 }
 
 

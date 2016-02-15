@@ -15,7 +15,7 @@ public class NetworkManager {
     private struct GitHubAPI {
         private static let base = "https://api.github.com/"
         private static func activityURL(forUser: User) -> String {
-            return base + "users\(forUser.username)/received_events"
+            return base + "users/\(forUser.username)/received_events"
         }
     }
     
@@ -29,6 +29,7 @@ public class NetworkManager {
     func fetchActivity(forUser user: User) -> SignalProducer<[Activity], NetworkError> {
 
         return SignalProducer { observer, disposable in
+            print(GitHubAPI.activityURL(user))
          
             Alamofire.request(.GET, GitHubAPI.activityURL(user), parameters: nil, encoding: ParameterEncoding.URL, headers: nil)
                 
@@ -37,6 +38,7 @@ public class NetworkManager {
                 switch response.result {
                 case .Failure(let error): observer.sendFailed(.Error(error)); print(error)
                 case .Success(let json):
+                    print(json)
                     
                     guard let activityArray = json as? [JSONDictionary] else { return observer.sendFailed(NetworkError.ParseFailure )}
                     let activities = activityArray.flatMap {
