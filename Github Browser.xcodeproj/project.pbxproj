@@ -32,17 +32,18 @@
 		E648E7081C68DEA800339DA4 /* RepoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E648E7071C68DEA800339DA4 /* RepoDetailView.swift */; };
 		E648E7091C68DEA800339DA4 /* RepoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E648E7071C68DEA800339DA4 /* RepoDetailView.swift */; };
 		E6630C9D1C511E0D0083D3D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; };
-		E6630C9F1C511F0E0083D3D5 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6630C9F1C511F0E0083D3D5 /* Alamofire.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6630CA11C5120030083D3D5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; };
-		E6630CA21C5120250083D3D5 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6630CA21C5120250083D3D5 /* Result.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6630CA41C5274380083D3D5 /* RepoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA31C5274380083D3D5 /* RepoTableViewController.swift */; };
 		E6630CA91C5279470083D3D5 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA51C5279470083D3D5 /* Actor.swift */; };
 		E6630CAA1C5279470083D3D5 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA61C5279470083D3D5 /* Payload.swift */; };
 		E6630CAB1C5279470083D3D5 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA71C5279470083D3D5 /* Repo.swift */; };
 		E6630CAC1C5279470083D3D5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CA81C5279470083D3D5 /* Activity.swift */; };
-		E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6630CB01C5284340083D3D5 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6630CAF1C5284340083D3D5 /* CircularImageView.swift */; };
 		E66EEDFF1C6E25A5000DEADE /* RepoDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E648E7041C68DE4000339DA4 /* RepoDetailView.xib */; };
+		E67813C31C7F467E00B3CC5F /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; };
 		E698317F1C5F8F2800D13694 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F41C5111B4008A6AF7 /* Alamofire.framework */; };
 		E69831801C5F8F2800D13694 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; };
 		E69831811C5F8F2800D13694 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6630CA01C5120030083D3D5 /* Result.framework */; };
@@ -51,6 +52,7 @@
 		E69831851C5F8F9600D13694 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6A0F3181C5944A00068E0A9 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6A0F3171C5944A00068E0A9 /* CardTableViewCell.xib */; };
 		E6A0F31A1C5944EF0068E0A9 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A0F3191C5944EF0068E0A9 /* CardTableViewCell.swift */; };
+		E6B71FD11C9EDC0B0029EFA4 /* ViewConfigurableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B71FD01C9EDC0B0029EFA4 /* ViewConfigurableTests.swift */; };
 		E6C6E3A41C510431008A6AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3A31C510431008A6AF7 /* AppDelegate.swift */; };
 		E6C6E3A91C510431008A6AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C6E3A71C510431008A6AF7 /* Main.storyboard */; };
 		E6C6E3AB1C510431008A6AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C6E3AA1C510431008A6AF7 /* Assets.xcassets */; };
@@ -61,7 +63,6 @@
 		E6C6E3DD1C51114E008A6AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C6E3DC1C51114E008A6AF7 /* Assets.xcassets */; };
 		E6C6E3E01C51114E008A6AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C6E3DE1C51114E008A6AF7 /* LaunchScreen.storyboard */; };
 		E6C6E3EB1C51114E008A6AF7 /* GitBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3EA1C51114E008A6AF7 /* GitBrowserTests.swift */; };
-		E6C6E3F71C5111B4008A6AF7 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C6E3F51C5111B4008A6AF7 /* ReactiveCocoa.framework */; };
 		E6C6E3FD1C5111F5008A6AF7 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3FC1C5111F5008A6AF7 /* RepoTableViewCell.swift */; };
 		E6C6E3FF1C51123D008A6AF7 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C6E3FE1C51123D008A6AF7 /* Networking.swift */; };
 /* End PBXBuildFile section */
@@ -84,16 +85,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E6630C9E1C511EF40083D3D5 /* CopyFiles */ = {
+		E6630C9E1C511EF40083D3D5 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in CopyFiles */,
-				E6630CA21C5120250083D3D5 /* Result.framework in CopyFiles */,
-				E6630C9F1C511F0E0083D3D5 /* Alamofire.framework in CopyFiles */,
+				E6630CAE1C527F900083D3D5 /* ReactiveCocoa.framework in Copy Files */,
+				E6630CA21C5120250083D3D5 /* Result.framework in Copy Files */,
+				E6630C9F1C511F0E0083D3D5 /* Alamofire.framework in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E69831821C5F8F4C00D13694 /* CopyFiles */ = {
@@ -133,6 +135,7 @@
 		E6A0F3161C593DC70068E0A9 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		E6A0F3171C5944A00068E0A9 /* CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 		E6A0F3191C5944EF0068E0A9 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		E6B71FD01C9EDC0B0029EFA4 /* ViewConfigurableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConfigurableTests.swift; sourceTree = "<group>"; };
 		E6C6E3A01C510431008A6AF7 /* Github Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C6E3A31C510431008A6AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6C6E3A81C510431008A6AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -180,9 +183,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E67813C31C7F467E00B3CC5F /* ReactiveCocoa.framework in Frameworks */,
 				E6630CA11C5120030083D3D5 /* Result.framework in Frameworks */,
 				E6630C9D1C511E0D0083D3D5 /* Alamofire.framework in Frameworks */,
-				E6C6E3F71C5111B4008A6AF7 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +310,7 @@
 			children = (
 				E6C6E3EA1C51114E008A6AF7 /* GitBrowserTests.swift */,
 				E6C6E3EC1C51114E008A6AF7 /* Info.plist */,
+				E6B71FD01C9EDC0B0029EFA4 /* ViewConfigurableTests.swift */,
 			);
 			path = GitBrowserTests;
 			sourceTree = "<group>";
@@ -369,7 +373,7 @@
 				E6C6E3D01C51114E008A6AF7 /* Frameworks */,
 				E6C6E3D11C51114E008A6AF7 /* Resources */,
 				E6C6E3F31C511173008A6AF7 /* Run Script */,
-				E6630C9E1C511EF40083D3D5 /* CopyFiles */,
+				E6630C9E1C511EF40083D3D5 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -583,6 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C6E3EB1C51114E008A6AF7 /* GitBrowserTests.swift in Sources */,
+				E6B71FD11C9EDC0B0029EFA4 /* ViewConfigurableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

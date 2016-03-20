@@ -23,12 +23,12 @@ OBJC_PROP_NAME_ATTR_10
 l_OBJC_$_CATEGORY_UITableViewCell_$_RACSignalSupport
 OBJC_LABEL_CATEGORY_$
 Apple LLVM version 7.0.2 (clang-700.1.81)
-/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/ZCUNREHTSZHE/ObjectiveC-20D5ROYLDWKCP.pcm
+/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/WCI4UNI9F1J9/ObjectiveC-20D5ROYLDWKCP.pcm
 ObjectiveC
-/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/ZCUNREHTSZHE/Foundation-2X822UGTSB4N2.pcm
+/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/WCI4UNI9F1J9/Foundation-2X822UGTSB4N2.pcm
 Foundation
 /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.1.sdk/System/Library/Frameworks/Foundation.framework
-/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/ZCUNREHTSZHE/UIKit-TS0PA4S5Z54I.pcm
+/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/WCI4UNI9F1J9/UIKit-TS0PA4S5Z54I.pcm
 UIKit
 /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.1.sdk/System/Library/Frameworks/UIKit.framework
 -[UITableViewCell(RACSignalSupport) rac_prepareForReuseSignal]
@@ -115,7 +115,7 @@ OBJC_METH_VAR_NAME_66
 .str8
 .str10
 .str12
-/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/ZCUNREHTSZHE/Darwin-1983322L0E5XB.pcm
+/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/WCI4UNI9F1J9/Darwin-1983322L0E5XB.pcm
 Darwin
 /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.1.sdk/usr/include
 rac_getImmediateInstanceMethod
@@ -338,7 +338,7 @@ OBJC_METH_VAR_NAME_142
 OBJC_PROP_NAME_ATTR_143
 l_OBJC_$_PROP_LIST_NSInvocation_$_RACTypeParsing
 l_OBJC_$_CATEGORY_NSInvocation_$_RACTypeParsing
-/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/ZCUNREHTSZHE/CoreGraphics-2WWX5E5XXGAWX.pcm
+/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/WCI4UNI9F1J9/CoreGraphics-2WWX5E5XXGAWX.pcm
 CoreGraphics
 -[NSInvocation(RACTypeParsing) rac_returnValue]
 /Users/MacBellingrath/Documents/Development/Github/Github Browser/Carthage/Checkouts/ReactiveCocoa/ReactiveCocoa/Objective-C/NSInvocation+RACTypeParsing.m
@@ -1299,7 +1299,7 @@ OBJC_METH_VAR_TYPE_53
 OBJC_METH_VAR_TYPE_55
 l_OBJC_$_INSTANCE_VARIABLES_RACCompoundDisposable
 l_OBJC_CLASS_RO_$_RACCompoundDisposable
-/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/ZCUNREHTSZHE/CoreFoundation-1FP03XBMUR9SR.pcm
+/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/WCI4UNI9F1J9/CoreFoundation-1FP03XBMUR9SR.pcm
 CoreFoundation
 /Users/MacBellingrath/Documents/Development/Github/Github Browser/Carthage/Checkouts/ReactiveCocoa/ReactiveCocoa/Objective-C/RACCompoundDisposable.m
 CFRangeMake
@@ -1952,8 +1952,8 @@ _unnamed_cfstring_46
 l_OBJC_$_CLASS_METHODS_RACObjCRuntime
 l_OBJC_METACLASS_RO_$_RACObjCRuntime
 l_OBJC_CLASS_RO_$_RACObjCRuntime
-/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/2AJVDF9ESL1P4/ObjectiveC-20D5ROYLDWKCP.pcm
-/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/2AJVDF9ESL1P4/Foundation-2X822UGTSB4N2.pcm
+/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/1DT6CUGG4S4YP/ObjectiveC-20D5ROYLDWKCP.pcm
+/Users/MacBellingrath/Library/Developer/Xcode/DerivedData/ModuleCache/1DT6CUGG4S4YP/Foundation-2X822UGTSB4N2.pcm
 +[RACObjCRuntime createClass:inheritingFromClass:]
 /Users/MacBellingrath/Documents/Development/Github/Github Browser/Carthage/Checkouts/ReactiveCocoa/ReactiveCocoa/Objective-C/RACObjCRuntime.m
 -[RACPassthroughSubscriber initWithSubscriber:signal:disposable:]

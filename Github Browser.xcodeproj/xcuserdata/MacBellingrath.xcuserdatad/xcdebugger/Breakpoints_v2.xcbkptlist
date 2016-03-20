@@ -25,22 +25,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GitBrowser/DetailViewController.swift"
-            timestampString = "477235986.115803"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "configureView(forActivity:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "GitBrowser/RepoTableViewController.swift"
             timestampString = "477237579.302303"
             startingColumnNumber = "9223372036854775807"
@@ -81,38 +65,22 @@
             endingLineNumber = "163"
             landmarkName = "showPreview(_:)"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GitBrowser.RepoTableViewController.showPreview (GitBrowser.RepoTableViewController)(__ObjC.UIGestureRecognizer) -&gt; ()"
-                  moduleName = "GitBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/MacBellingrath/Documents/Development/Github/Github%20Browser/GitBrowser/RepoTableViewController.swift"
-                  timestampString = "477237224.412957"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "161"
-                  endingLineNumber = "161"
-                  offsetFromSymbolStart = "644">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GitBrowser.RepoTableViewController.showPreview (GitBrowser.RepoTableViewController)(__ObjC.UIGestureRecognizer) -&gt; ()"
-                  moduleName = "GitBrowser"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/MacBellingrath/Documents/Development/Github/Github%20Browser/GitBrowser/RepoTableViewController.swift"
-                  timestampString = "477237224.413117"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "161"
-                  endingLineNumber = "161"
-                  offsetFromSymbolStart = "677">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitBrowserTests/ViewConfigurableTests.swift"
+            timestampString = "480175632.467692"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "testGivingViewActivityConfiguresView()"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

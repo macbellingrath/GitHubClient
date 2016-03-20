@@ -13,9 +13,7 @@ public enum EventType: String {
 
 class Activity : NSObject, NSCoding{
     
-
-
-	var user : User!
+    var user : User!
 	var createdAt : String?
 	var id : String!
 	var org : User!
@@ -27,6 +25,7 @@ class Activity : NSObject, NSCoding{
        return EventType(rawValue: type) ?? EventType.Unknown
     }
 
+    
 
 	/**
 	 * Instantiate the instance using the passed dictionary values to set the properties values
